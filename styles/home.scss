@@ -1,1 +1,40 @@
 @import 'fonts';
+
+.home-main-wrapper {
+  .home-top {
+    background: url('./images/anytime-fitness-weights-mobile.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    height: 2100px;
+    width: 100%;
+    padding: 290px 40px 0 40px;
+    .home-top-div1 {
+      text-align: center;
+      p {
+        font-size: 4em;
+        color: #fff;
+        font-family: $av;
+        line-height: 84px;
+        margin-bottom: 23px;
+      }
+      .home-location-search {
+        display: flex;
+        heigth: 150px;
+        width: 100%;
+        input {
+          height: 150px;
+          width: 78%;
+          border-radius: 20px 0 0 20px;
+          border: none;
+        }
+        button {
+          height: 150px;
+          width: 22%;
+          background: #804c9e;
+          border-radius: 0 20px 20px 0;
+          border: none;
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,37 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
+.home-main-wrapper .home-top {
+  background: url("./images/anytime-fitness-weights-mobile.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  height: 2100px;
+  width: 100%;
+  padding: 290px 40px 0 40px; }
+  .home-main-wrapper .home-top .home-top-div1 {
+    text-align: center; }
+    .home-main-wrapper .home-top .home-top-div1 p {
+      font-size: 4em;
+      color: #fff;
+      font-family: "averta";
+      line-height: 84px;
+      margin-bottom: 23px; }
+    .home-main-wrapper .home-top .home-top-div1 .home-location-search {
+      display: flex;
+      heigth: 150px;
+      width: 100%; }
+      .home-main-wrapper .home-top .home-top-div1 .home-location-search input {
+        height: 150px;
+        width: 78%;
+        border-radius: 20px 0 0 20px;
+        border: none; }
+      .home-main-wrapper .home-top .home-top-div1 .home-location-search button {
+        height: 150px;
+        width: 22%;
+        background: #804c9e;
+        border-radius: 0 20px 20px 0;
+        border: none; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
