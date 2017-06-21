@@ -11,6 +11,27 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 });
 'use strict';
 
+angular.module('app').directive('header', function () {
+
+  return {
+    restrict: 'E',
+    templateUrl: './views/header.html',
+    link: function link(scope, elem, att) {
+
+      $(document).ready(function () {
+        $('#nav-icon3').click(function () {
+          $(this).toggleClass('open');
+
+          $('#header-slide').toggleClass('down');
+
+          $('#header-wrapper-slide').toggleClass('down');
+        });
+      });
+    }
+  };
+});
+'use strict';
+
 angular.module('app').controller('mainCtrl', function ($scope, mainSrvc) {
 
   // $scope.test = 'ctrl working';

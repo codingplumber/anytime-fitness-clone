@@ -7,175 +7,317 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
-.home-main-wrapper .home-top {
-  background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%;
-  filter: brightness(77%);
-  height: 2100px;
-  width: 100%;
-  padding: 290px 40px 0 40px; }
-  .home-main-wrapper .home-top .home-top-div1 {
-    text-align: center;
-    margin-bottom: 139px; }
-    .home-main-wrapper .home-top .home-top-div1 p {
-      font-size: 4em;
-      color: #ffffff;
-      font-family: "averta";
-      line-height: 80px;
-      margin-bottom: 23px; }
-    .home-main-wrapper .home-top .home-top-div1 .home-location-search {
-      display: flex;
-      heigth: 160px;
-      width: 100%; }
-      .home-main-wrapper .home-top .home-top-div1 .home-location-search input {
-        height: 160px;
-        width: 78%;
-        border-radius: 20px 0 0 20px;
-        border: none;
-        font-size: 2.75em;
-        padding-left: 56px;
-        font-family: "roboreg"; }
-      .home-main-wrapper .home-top .home-top-div1 .home-location-search button {
-        height: 160px;
-        width: 22%;
-        background: #804c9e;
-        border-radius: 0 20px 20px 0;
-        border: none;
-        color: #ffffff;
-        font-size: 67px; }
-  .home-main-wrapper .home-top .home-top-div2 {
-    color: #fff;
-    text-align: center;
-    position: relative;
-    margin-bottom: 200px; }
-    .home-main-wrapper .home-top .home-top-div2 .home-div2-text1 {
-      font-size: 5.75em;
-      font-family: "roboreg";
-      margin-bottom: 42px; }
-    .home-main-wrapper .home-top .home-top-div2 .home-div2-text2 {
-      font-size: 11em;
-      font-family: "averta"; }
-      .home-main-wrapper .home-top .home-top-div2 .home-div2-text2 sup {
-        font-size: 50%;
-        position: absolute;
-        bottom: 106px; }
-  .home-main-wrapper .home-top .home-top-div3 {
-    display: flex;
-    justify-content: center; }
-    .home-main-wrapper .home-top .home-top-div3 button {
-      background-color: transparent;
-      height: 163px;
-      width: 73%;
-      border: #ffffff 9px solid;
-      border-radius: 82px;
-      color: #ffffff;
-      text-align: center;
-      font-size: 3em;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 0 82px; }
-      .home-main-wrapper .home-top .home-top-div3 button p {
-        font-family: "averta"; }
-      .home-main-wrapper .home-top .home-top-div3 button i {
-        font-size: 2em;
-        opacity: 0.6; }
-
-.home-main-wrapper .home-middle .home-middle-div {
-  height: 1173px;
-  width: 100%;
-  filter: brightness(77%);
-  font-size: 5.5em;
-  color: #ffffff;
-  text-align: center;
+.header-wrapper {
+  text-transform: uppercase;
   font-family: "averta";
-  padding: 0 56px;
-  display: flex;
-  align-items: center; }
-  .home-main-wrapper .home-middle .home-middle-div span {
-    font-family: "Open Sans", sans-serif;
-    font-size: 105%; }
-
-.home-main-wrapper .home-middle .home-div1 {
-  background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
-.home-main-wrapper .home-middle .home-div2 {
-  background: url("./images/home/App.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
-.home-main-wrapper .home-middle .home-div3 {
-  background: url("./images/home/Rugged3.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
-.home-main-wrapper .home-bottom {
-  background: #333;
-  padding: 180px 54px; }
-  .home-main-wrapper .home-bottom .home-bottom-nav {
-    margin-bottom: 100px; }
-    .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text {
-      text-transform: uppercase;
-      font-family: "averta";
-      margin-bottom: 70px; }
-      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-heading {
-        font-size: 21px;
-        color: #ffffff;
-        margin-bottom: 70px; }
-      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-subheading p {
-        color: #888;
-        font-size: 14px;
-        margin-bottom: 60px;
-        line-height: 38px; }
-  .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media {
+  position: relative;
+  height: 218px;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+  .header-wrapper .header-left .header-top {
+    height: 220px;
+    width: 100%;
+    background: #804c9e;
+    color: #ffffff;
     display: flex;
-    flex-flow: wrap; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle {
-      height: 125px;
-      width: 125px;
-      border: #888 8px solid;
-      border-radius: 50%;
-      background-color: transparent;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0 55px 0 55px; }
+    .header-wrapper .header-left .header-top img {
+      height: 108px;
+      width: auto; }
+  .header-wrapper .header-left .header-mobile {
+    height: 170px;
+    width: 100%;
+    border-top: #996fb1 1px solid;
+    background: #804c9e;
+    display: flex;
+    align-items: center;
+    padding-left: 55px; }
+    .header-wrapper .header-left .header-mobile .header-links-mobile {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 43px; }
+  .header-wrapper .header-right {
+    height: 170px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 55px; }
+    .header-wrapper .header-right a {
+      text-decoration: none;
+      color: #804c9e;
+      font-size: 47px; }
+
+#header-slide {
+  top: -972px;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#header-slide.down {
+  top: 220px; }
+
+#header-wrapper-slide.down {
+  height: 1411px; }
+
+#nav-icon3 {
+  width: 114px;
+  /*60px*/
+  height: 45px;
+  position: relative;
+  margin-bottom: 33px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 13px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 35px;
+  /*18px*/ }
+
+#nav-icon3 span:nth-child(4) {
+  top: 70px;
+  /*36px*/ }
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon3.open span:nth-child(2) {
+  background: #000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#nav-icon3.open span:nth-child(3) {
+  background: #000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@font-face {
+  font-family: "averta";
+  src: url(./fonts/averta-bold-5949306582138.otf); }
+
+@font-face {
+  font-family: "roboreg";
+  src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
+.home-main-wrapper {
+  z-index: 5; }
+  .home-main-wrapper .home-dark-underlay {
+    background: #333;
+    width: 100%;
+    height: 2100px; }
+    .home-main-wrapper .home-dark-underlay .home-top {
+      background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
+      background-size: cover;
+      background-position-x: 50%;
+      opacity: 0.75;
+      height: 2100px;
+      width: 100%;
+      padding: 290px 40px 0 40px; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 {
+        text-align: center;
+        margin-bottom: 139px; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p {
+          filter: brightness(150%);
+          font-size: 4em;
+          color: #ffffff;
+          font-family: "averta";
+          line-height: 80px;
+          margin-bottom: 23px; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search {
+          display: flex;
+          heigth: 160px;
+          width: 100%; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search input {
+            height: 160px;
+            width: 78%;
+            border-radius: 20px 0 0 20px;
+            border: none;
+            font-size: 2.75em;
+            padding-left: 56px;
+            font-family: "roboreg"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search button {
+            height: 160px;
+            width: 22%;
+            background: #804c9e;
+            border-radius: 0 20px 20px 0;
+            border: none;
+            color: #ffffff;
+            font-size: 67px; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        margin-bottom: 200px; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text1 {
+          font-size: 5.75em;
+          font-family: "roboreg";
+          margin-bottom: 42px; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 {
+          font-size: 11em;
+          font-family: "averta"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 sup {
+            font-size: 50%;
+            position: absolute;
+            bottom: 106px; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 {
+        display: flex;
+        justify-content: center; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button {
+          background-color: transparent;
+          height: 163px;
+          width: 73%;
+          border: #ffffff 9px solid;
+          border-radius: 82px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 3em;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 82px; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button p {
+            font-family: "averta"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
+            font-size: 2em;
+            opacity: 0.6; }
+  .home-main-wrapper .home-middle .home-middle-div {
+    height: 1173px;
+    width: 100%;
+    filter: brightness(77%);
+    font-size: 5.5em;
+    color: #ffffff;
+    text-align: center;
+    font-family: "averta";
+    padding: 0 56px;
+    display: flex;
+    align-items: center; }
+    .home-main-wrapper .home-middle .home-middle-div span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 105%; }
+  .home-main-wrapper .home-middle .home-div1 {
+    background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: 50%; }
+  .home-main-wrapper .home-middle .home-div2 {
+    background: url("./images/home/App.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: 50%; }
+  .home-main-wrapper .home-middle .home-div3 {
+    background: url("./images/home/Rugged3.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: 50%; }
+  .home-main-wrapper .home-bottom {
+    background: #333;
+    padding: 180px 54px; }
+    .home-main-wrapper .home-bottom .home-bottom-nav {
+      margin-bottom: 100px; }
+      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text {
+        text-transform: uppercase;
+        font-family: "averta";
+        margin-bottom: 70px; }
+        .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-heading {
+          font-size: 21px;
+          color: #ffffff;
+          margin-bottom: 70px; }
+        .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-subheading p {
+          color: #888;
+          font-size: 14px;
+          margin-bottom: 60px;
+          line-height: 38px; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 87px;
-      margin-right: 40px; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a {
-        text-decoration: none; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a i {
-          color: #888; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i1 {
-          font-size: 78px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i2 {
-          font-size: 71px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i3 {
-          font-size: 56px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i4 {
-          font-size: 71px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i5 {
-          font-size: 73px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i6 {
-          font-size: 72px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i7 {
-          font-size: 80px; }
-  .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem {
-    font-family: "roboreg";
-    color: #888;
-    font-size: 14px; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem img {
-      height: 162px;
-      width: auto;
-      margin-bottom: 32px; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm {
-      margin-bottom: 80px; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm span {
-        font-size: 16px; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-c {
-      line-height: 50px; }
+      flex-flow: wrap; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle {
+        height: 125px;
+        width: 125px;
+        border: #888 8px solid;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 87px;
+        margin-right: 40px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a {
+          text-decoration: none; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a i {
+            color: #888; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i1 {
+            font-size: 78px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i2 {
+            font-size: 71px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i3 {
+            font-size: 56px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i4 {
+            font-size: 71px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i5 {
+            font-size: 73px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i6 {
+            font-size: 72px; }
+          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i7 {
+            font-size: 80px; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem {
+      font-family: "roboreg";
+      color: #888;
+      font-size: 14px; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem img {
+        height: 162px;
+        width: auto;
+        margin-bottom: 32px; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm {
+        margin-bottom: 80px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm span {
+          font-size: 16px; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-c {
+        line-height: 50px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

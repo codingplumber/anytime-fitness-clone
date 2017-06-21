@@ -1,95 +1,104 @@
 @import 'fonts';
 
 .home-main-wrapper {
+  z-index: 5;
   // background: #ffffff;
   // height: 100%;
   // width: 100%;
-  .home-top {
-    background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
-    background-size: cover;
-    background-position-x: 50%;
-    // opacity: 0.8;
-    filter: brightness(77%);
-    height: 2100px;
+  .home-dark-underlay {
+    background: #333;
     width: 100%;
-    padding: 290px 40px 0 40px;
-    .home-top-div1 {
-      text-align: center;
-      margin-bottom: 139px;
-      p {
-        font-size: 4em;
-        color: #ffffff;
-        font-family: $av;
-        line-height: 80px;
-        margin-bottom: 23px;
-      }
-      .home-location-search {
-        display: flex;
-        heigth: 160px;
-        width: 100%;
-        input {
-          height: 160px;
-          width: 78%;
-          border-radius: 20px 0 0 20px;
-          border: none;
-          font-size: 2.75em;
-          padding-left: 56px;
-          font-family: $robreg;
-        }
-        button {
-          height: 160px;
-          width: 22%;
-          background: #804c9e;
-          border-radius: 0 20px 20px 0;
-          border: none;
-          color: #ffffff;
-          font-size: 67px;
-        }
-      }
-    }
-    .home-top-div2 {
-      color: #fff;
-      // opacity: 0.75;
-      text-align: center;
-      position: relative;
-      margin-bottom: 200px;
-      .home-div2-text1 {
-        font-size: 5.75em;
-        font-family: $robreg;
-        margin-bottom: 42px;
-      }
-      .home-div2-text2 {
-        font-size: 11em;
-        font-family: $av;
-        sup {
-          font-size: 50%;
-          position: absolute;
-          bottom: 106px;
-        }
-      }
-    }
-    .home-top-div3 {
-      display: flex;
-      justify-content: center;
-      button {
-        background-color: transparent;
-        height: 163px;
-        width: 73%;
-        border: #ffffff 9px solid;
-        border-radius: 82px;
-        color: #ffffff;
+    height: 2100px;
+    // position: relative;
+    .home-top {
+      // position: absolute;
+      background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
+      background-size: cover;
+      background-position-x: 50%;
+      opacity: 0.75;
+      // filter: brightness(77%);
+      height: 2100px;
+      width: 100%;
+      padding: 290px 40px 0 40px;
+      .home-top-div1 {
         text-align: center;
-        font-size: 3em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 82px;
+        margin-bottom: 139px;
         p {
+          filter: brightness(150%);
+          font-size: 4em;
+          color: #ffffff;
           font-family: $av;
+          line-height: 80px;
+          margin-bottom: 23px;
         }
-        i {
-          font-size: 2em;
-          opacity: 0.6;
+        .home-location-search {
+          display: flex;
+          heigth: 160px;
+          width: 100%;
+          input {
+            height: 160px;
+            width: 78%;
+            border-radius: 20px 0 0 20px;
+            border: none;
+            font-size: 2.75em;
+            padding-left: 56px;
+            font-family: $robreg;
+          }
+          button {
+            height: 160px;
+            width: 22%;
+            background: #804c9e;
+            border-radius: 0 20px 20px 0;
+            border: none;
+            color: #ffffff;
+            font-size: 67px;
+          }
+        }
+      }
+      .home-top-div2 {
+        color: #fff;
+        // opacity: 0.75;
+        text-align: center;
+        position: relative;
+        margin-bottom: 200px;
+        .home-div2-text1 {
+          font-size: 5.75em;
+          font-family: $robreg;
+          margin-bottom: 42px;
+        }
+        .home-div2-text2 {
+          font-size: 11em;
+          font-family: $av;
+          sup {
+            font-size: 50%;
+            position: absolute;
+            bottom: 106px;
+          }
+        }
+      }
+      .home-top-div3 {
+        display: flex;
+        justify-content: center;
+        button {
+          background-color: transparent;
+          height: 163px;
+          width: 73%;
+          border: #ffffff 9px solid;
+          border-radius: 82px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 3em;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 82px;
+          p {
+            font-family: $av;
+          }
+          i {
+            font-size: 2em;
+            opacity: 0.6;
+          }
         }
       }
     }
