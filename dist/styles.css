@@ -8,7 +8,7 @@
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
 .home-main-wrapper .home-top {
-  background: url("./images/anytime-fitness-weights-mobile.jpg") no-repeat;
+  background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
   background-size: cover;
   background-position-x: 50%;
   filter: brightness(77%);
@@ -22,14 +22,14 @@
       font-size: 4em;
       color: #ffffff;
       font-family: "averta";
-      line-height: 84px;
+      line-height: 80px;
       margin-bottom: 23px; }
     .home-main-wrapper .home-top .home-top-div1 .home-location-search {
       display: flex;
-      heigth: 150px;
+      heigth: 160px;
       width: 100%; }
       .home-main-wrapper .home-top .home-top-div1 .home-location-search input {
-        height: 150px;
+        height: 160px;
         width: 78%;
         border-radius: 20px 0 0 20px;
         border: none;
@@ -37,11 +37,13 @@
         padding-left: 56px;
         font-family: "roboreg"; }
       .home-main-wrapper .home-top .home-top-div1 .home-location-search button {
-        height: 150px;
+        height: 160px;
         width: 22%;
         background: #804c9e;
         border-radius: 0 20px 20px 0;
-        border: none; }
+        border: none;
+        color: #ffffff;
+        font-size: 67px; }
   .home-main-wrapper .home-top .home-top-div2 {
     color: #fff;
     text-align: center;
@@ -96,36 +98,84 @@
     font-size: 105%; }
 
 .home-main-wrapper .home-middle .home-div1 {
-  background: url("./images/anytime-fitness-gym.jpg") no-repeat;
+  background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
   background-size: cover;
   background-position-x: 50%; }
 
 .home-main-wrapper .home-middle .home-div2 {
-  background: url("./images/App.jpg") no-repeat;
+  background: url("./images/home/App.jpg") no-repeat;
   background-size: cover;
   background-position-x: 50%; }
 
 .home-main-wrapper .home-middle .home-div3 {
-  background: url("./images/Rugged3.jpg") no-repeat;
+  background: url("./images/home/Rugged3.jpg") no-repeat;
   background-size: cover;
   background-position-x: 50%; }
 
 .home-main-wrapper .home-bottom {
   background: #333;
   padding: 180px 54px; }
-  .home-main-wrapper .home-bottom .home-bottom-text {
-    text-transform: uppercase;
-    font-family: "averta";
-    margin-bottom: 70px; }
-    .home-main-wrapper .home-bottom .home-bottom-text .home-bottom-heading {
-      font-size: 21px;
-      color: #ffffff;
+  .home-main-wrapper .home-bottom .home-bottom-nav {
+    margin-bottom: 100px; }
+    .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text {
+      text-transform: uppercase;
+      font-family: "averta";
       margin-bottom: 70px; }
-    .home-main-wrapper .home-bottom .home-bottom-text .home-bottom-subheading p {
-      color: #888;
-      font-size: 14px;
-      margin-bottom: 60px;
-      line-height: 38px; }
+      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-heading {
+        font-size: 21px;
+        color: #ffffff;
+        margin-bottom: 70px; }
+      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-subheading p {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 60px;
+        line-height: 38px; }
+  .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media {
+    display: flex;
+    flex-flow: wrap; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle {
+      height: 125px;
+      width: 125px;
+      border: #888 8px solid;
+      border-radius: 50%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 87px;
+      margin-right: 40px; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a {
+        text-decoration: none; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a i {
+          color: #888; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i1 {
+          font-size: 78px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i2 {
+          font-size: 71px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i3 {
+          font-size: 56px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i4 {
+          font-size: 71px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i5 {
+          font-size: 73px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i6 {
+          font-size: 72px; }
+        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i7 {
+          font-size: 80px; }
+  .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem {
+    font-family: "roboreg";
+    color: #888;
+    font-size: 14px; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem img {
+      height: 162px;
+      width: auto;
+      margin-bottom: 32px; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm {
+      margin-bottom: 80px; }
+      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm span {
+        font-size: 16px; }
+    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-c {
+      line-height: 50px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

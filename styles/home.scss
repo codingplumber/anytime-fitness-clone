@@ -5,7 +5,7 @@
   // height: 100%;
   // width: 100%;
   .home-top {
-    background: url('./images/anytime-fitness-weights-mobile.jpg') no-repeat;
+    background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
     background-size: cover;
     background-position-x: 50%;
     // opacity: 0.8;
@@ -20,15 +20,15 @@
         font-size: 4em;
         color: #ffffff;
         font-family: $av;
-        line-height: 84px;
+        line-height: 80px;
         margin-bottom: 23px;
       }
       .home-location-search {
         display: flex;
-        heigth: 150px;
+        heigth: 160px;
         width: 100%;
         input {
-          height: 150px;
+          height: 160px;
           width: 78%;
           border-radius: 20px 0 0 20px;
           border: none;
@@ -37,11 +37,13 @@
           font-family: $robreg;
         }
         button {
-          height: 150px;
+          height: 160px;
           width: 22%;
           background: #804c9e;
           border-radius: 0 20px 20px 0;
           border: none;
+          color: #ffffff;
+          font-size: 67px;
         }
       }
     }
@@ -111,17 +113,17 @@
       }
     }
     .home-div1 {
-      background: url('./images/anytime-fitness-gym.jpg') no-repeat;
+      background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
       background-size: cover;
       background-position-x: 50%;
     }
     .home-div2 {
-      background: url('./images/App.jpg') no-repeat;
+      background: url('./images/home/App.jpg') no-repeat;
       background-size: cover;
       background-position-x: 50%;
     }
     .home-div3 {
-      background: url('./images/Rugged3.jpg') no-repeat;
+      background: url('./images/home/Rugged3.jpg') no-repeat;
       background-size: cover;
       background-position-x: 50%;
     }
@@ -130,21 +132,88 @@
   .home-bottom {
     background: #333;
     padding: 180px 54px;
-    .home-bottom-text {
-      text-transform: uppercase;
-      font-family: $av;
-      margin-bottom: 70px;
-      .home-bottom-heading {
-        font-size: 21px;
-        color: #ffffff;
+    .home-bottom-nav {
+      margin-bottom: 100px;
+      .home-bottom-text {
+        text-transform: uppercase;
+        font-family: $av;
         margin-bottom: 70px;
+        .home-bottom-heading {
+          font-size: 21px;
+          color: #ffffff;
+          margin-bottom: 70px;
+        }
+        .home-bottom-subheading {
+          p {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 60px;
+            line-height: 38px;
+          }
+        }
       }
-      .home-bottom-subheading {
-        p {
-          color: #888;
-          font-size: 14px;
-          margin-bottom: 60px;
-          line-height: 38px;
+    }
+    .home-bottom-etc {
+      .home-social-media {
+        display: flex;
+        flex-flow: wrap;
+        .home-social-circle {
+          height: 125px;
+          width: 125px;
+          border: #888 8px solid;
+          border-radius: 50%;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 87px;
+          margin-right: 40px;
+          a {
+            text-decoration: none;
+            i {
+              color: #888;
+            }
+            .i1 {
+              font-size: 78px;
+            }
+            .i2 {
+              font-size: 71px;
+            }
+            .i3 {
+              font-size: 56px;
+            }
+            .i4 {
+              font-size: 71px;
+            }
+            .i5 {
+              font-size: 73px;
+            }
+            .i6 {
+              font-size: 72px;
+            }
+            .i7 {
+              font-size: 80px;
+            }
+          }
+        }
+      }
+      .home-self-esteem {
+        font-family: $robreg;
+        color: #888;
+        font-size: 14px;
+        img {
+          height: 162px;
+          width: auto;
+          margin-bottom: 32px;
+        }
+        .home-bottom-tm {
+          margin-bottom: 80px;
+          span {
+            font-size: 16px;
+          }
+        }
+        .home-bottom-c {
+          line-height: 50px;
         }
       }
     }
