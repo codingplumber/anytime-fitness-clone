@@ -1,0 +1,92 @@
+@import 'fonts';
+
+.footer-bottom {
+  background: #333;
+  padding: 180px 54px;
+  .footer-bottom-nav {
+    margin-bottom: 100px;
+    .footer-bottom-text {
+      text-transform: uppercase;
+      font-family: $av;
+      margin-bottom: 70px;
+      .footer-bottom-heading {
+        font-size: 21px;
+        color: #ffffff;
+        margin-bottom: 70px;
+      }
+      .footer-bottom-subheading {
+        p {
+          color: #888;
+          font-size: 14px;
+          margin-bottom: 60px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-etc {
+    .footer-social-media {
+      display: flex;
+      flex-flow: wrap;
+      .footer-social-circle {
+        height: 125px;
+        width: 125px;
+        border: #888 8px solid;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 87px;
+        margin-right: 40px;
+        a {
+          text-decoration: none;
+          i {
+            color: #888;
+          }
+          .i1 {
+            font-size: 78px;
+          }
+          .i2 {
+            font-size: 71px;
+          }
+          .i3 {
+            font-size: 56px;
+          }
+          .i4 {
+            font-size: 71px;
+          }
+          .i5 {
+            font-size: 73px;
+          }
+          .i6 {
+            font-size: 72px;
+          }
+          .i7 {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+    .footer-self-esteem {
+      font-family: $robreg;
+      color: #888;
+      font-size: 14px;
+      img {
+        height: 162px;
+        width: auto;
+        margin-bottom: 32px;
+      }
+      .footer-bottom-tm {
+        margin-bottom: 80px;
+        span {
+          font-size: 16px;
+        }
+      }
+      .footer-bottom-c {
+        line-height: 50px;
+      }
+    }
+  }
+}

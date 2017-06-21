@@ -7,6 +7,80 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
+.footer-bottom {
+  background: #333;
+  padding: 180px 54px; }
+  .footer-bottom .footer-bottom-nav {
+    margin-bottom: 100px; }
+    .footer-bottom .footer-bottom-nav .footer-bottom-text {
+      text-transform: uppercase;
+      font-family: "averta";
+      margin-bottom: 70px; }
+      .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-heading {
+        font-size: 21px;
+        color: #ffffff;
+        margin-bottom: 70px; }
+      .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-subheading p {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 60px;
+        line-height: 38px; }
+  .footer-bottom .footer-bottom-etc .footer-social-media {
+    display: flex;
+    flex-flow: wrap; }
+    .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle {
+      height: 125px;
+      width: 125px;
+      border: #888 8px solid;
+      border-radius: 50%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 87px;
+      margin-right: 40px; }
+      .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a {
+        text-decoration: none; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a i {
+          color: #888; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i1 {
+          font-size: 78px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i2 {
+          font-size: 71px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i3 {
+          font-size: 56px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i4 {
+          font-size: 71px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i5 {
+          font-size: 73px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i6 {
+          font-size: 72px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i7 {
+          font-size: 80px; }
+  .footer-bottom .footer-bottom-etc .footer-self-esteem {
+    font-family: "roboreg";
+    color: #888;
+    font-size: 14px; }
+    .footer-bottom .footer-bottom-etc .footer-self-esteem img {
+      height: 162px;
+      width: auto;
+      margin-bottom: 32px; }
+    .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm {
+      margin-bottom: 80px; }
+      .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm span {
+        font-size: 16px; }
+    .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-c {
+      line-height: 50px; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@font-face {
+  font-family: "averta";
+  src: url(./fonts/averta-bold-5949306582138.otf); }
+
+@font-face {
+  font-family: "roboreg";
+  src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
 .header-wrapper {
   text-transform: uppercase;
   font-family: "averta";
@@ -254,70 +328,6 @@
     background: url("./images/home/Rugged3.jpg") no-repeat;
     background-size: cover;
     background-position-x: 50%; }
-  .home-main-wrapper .home-bottom {
-    background: #333;
-    padding: 180px 54px; }
-    .home-main-wrapper .home-bottom .home-bottom-nav {
-      margin-bottom: 100px; }
-      .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text {
-        text-transform: uppercase;
-        font-family: "averta";
-        margin-bottom: 70px; }
-        .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-heading {
-          font-size: 21px;
-          color: #ffffff;
-          margin-bottom: 70px; }
-        .home-main-wrapper .home-bottom .home-bottom-nav .home-bottom-text .home-bottom-subheading p {
-          color: #888;
-          font-size: 14px;
-          margin-bottom: 60px;
-          line-height: 38px; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media {
-      display: flex;
-      flex-flow: wrap; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle {
-        height: 125px;
-        width: 125px;
-        border: #888 8px solid;
-        border-radius: 50%;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 87px;
-        margin-right: 40px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a {
-          text-decoration: none; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a i {
-            color: #888; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i1 {
-            font-size: 78px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i2 {
-            font-size: 71px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i3 {
-            font-size: 56px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i4 {
-            font-size: 71px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i5 {
-            font-size: 73px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i6 {
-            font-size: 72px; }
-          .home-main-wrapper .home-bottom .home-bottom-etc .home-social-media .home-social-circle a .i7 {
-            font-size: 80px; }
-    .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem {
-      font-family: "roboreg";
-      color: #888;
-      font-size: 14px; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem img {
-        height: 162px;
-        width: auto;
-        margin-bottom: 32px; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm {
-        margin-bottom: 80px; }
-        .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-tm span {
-          font-size: 16px; }
-      .home-main-wrapper .home-bottom .home-bottom-etc .home-self-esteem .home-bottom-c {
-        line-height: 50px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
