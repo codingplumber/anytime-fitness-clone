@@ -2,21 +2,18 @@
 
 .home-main-wrapper {
   z-index: 5;
-  // background: #ffffff;
-  // height: 100%;
-  // width: 100%;
+  -moz-box-shadow:    inset 0 30px 15px -7px #1e1e1e;
+  -webkit-box-shadow: inset 0 30px 15px -7px #1e1e1e;
+  box-shadow:         inset 0 30px 15px -7px #1e1e1e;
   .home-dark-underlay {
     background: #333;
     width: 100%;
     height: 2100px;
-    // position: relative;
     .home-top {
-      // position: absolute;
       background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
       background-size: cover;
       background-position-x: 50%;
       opacity: 0.75;
-      // filter: brightness(77%);
       height: 2100px;
       width: 100%;
       padding: 290px 40px 0 40px;
@@ -57,7 +54,6 @@
       }
       .home-top-div2 {
         color: #fff;
-        // opacity: 0.75;
         text-align: center;
         position: relative;
         margin-bottom: 200px;

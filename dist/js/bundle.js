@@ -10,6 +10,9 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
   }).state('training', {
     url: '/training',
     templateUrl: './views/training.html'
+  }).state('join', {
+    url: '/join',
+    templateUrl: './views/join.html'
   });
 });
 'use strict';
