@@ -8,5 +8,9 @@ angular.module('app', ['ui.router'])
       url: '/',
       templateUrl: './views/home.html'
     })
+    .state('training', {
+      url: '/training',
+      templateUrl: './views/training.html'
+    })
 
 })
