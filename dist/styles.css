@@ -329,6 +329,82 @@
     background-size: cover;
     background-position-x: 50%; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@font-face {
+  font-family: "averta";
+  src: url(./fonts/averta-bold-5949306582138.otf); }
+
+@font-face {
+  font-family: "roboreg";
+  src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
+.training-header {
+  box-shadow: 30px 5px grey; }
+
+.training-wrapper {
+  background: #ffffff;
+  padding-top: 300px; }
+  .training-wrapper .training-top {
+    padding: 0 47px 0 47px; }
+    .training-wrapper .training-top .training-top-heading {
+      font-family: "averta";
+      font-size: 152px;
+      color: #231f2b;
+      text-align: center;
+      margin-bottom: 75px; }
+    .training-wrapper .training-top .training-top-p {
+      font-family: "roboreg";
+      font-size: 16px;
+      color: #777783;
+      line-height: 90px;
+      text-align: center;
+      margin-bottom: 95px; }
+    .training-wrapper .training-top .training-top-button {
+      margin-bottom: 130px; }
+      .training-wrapper .training-top .training-top-button button {
+        height: 175px;
+        width: 100%;
+        font-family: "averta";
+        background: #ffffff;
+        border: #231f2b 10px solid;
+        border-radius: 102px;
+        font-size: 49px;
+        text-align: center;
+        text-transform: uppercase; }
+        .training-wrapper .training-top .training-top-button button span {
+          display: none; }
+    .training-wrapper .training-top .training-top-a {
+      text-align: center;
+      font-family: "averta";
+      font-size: 14px;
+      margin-bottom: 120px; }
+      .training-wrapper .training-top .training-top-a a {
+        color: #afbc21;
+        text-decoration: none; }
+  .training-wrapper .training-middle {
+    padding: 0 47px 0 47px; }
+    .training-wrapper .training-middle .training-videos {
+      margin-bottom: 75px; }
+      .training-wrapper .training-middle .training-videos .training-video {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .training-wrapper .training-middle .training-videos .training-video a img {
+          width: 100%;
+          height: auto; }
+        .training-wrapper .training-middle .training-videos .training-video i {
+          position: absolute;
+          font-size: 250px;
+          color: #ffffff;
+          opacity: 0.5;
+          bottom: 50px;
+          right: 50px; }
+      .training-wrapper .training-middle .training-videos .training-video-text {
+        color: #231f2b; }
+        .training-wrapper .training-middle .training-videos .training-video-text p:first-of-type {
+          font-size: 30px; }
+        .training-wrapper .training-middle .training-videos .training-video-text p:last-of-type {
+          font-size: 14px; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
