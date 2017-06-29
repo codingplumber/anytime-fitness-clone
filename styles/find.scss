@@ -1,0 +1,66 @@
+@import 'fonts';
+
+.find-wrapper {
+  .find {
+    background: url('./images/join/gym-finder-background.jpg') no-repeat;
+    background-size: cover;
+    height: 652px;
+    width: 100%;
+    background-position-x: 50%;
+    color: #ffffff;
+    text-align: center;
+    padding: 56px 40px 160px 56px;
+    font-family: $robreg;
+    font-size: 55px;
+    .find-heading {
+      margin-bottom: 29px;
+      p {
+        line-height: 77px;
+      }
+    }
+    .find-search {
+      display: flex;
+      heigth: 160px;
+      width: 100%;
+      margin-bottom: 56px;
+      input {
+        height: 160px;
+        width: 78%;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        font-size: 44px;
+        padding-left: 56px;
+        font-family: $robreg;
+      }
+      button {
+        height: 160px;
+        width: 22%;
+        background: #804c9e;
+        border-radius: 0 20px 20px 0;
+        border: none;
+        color: #ffffff;
+        font-size: 67px;
+      }
+    }
+    .find-locations {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-left: 13%;
+      .find-current {
+        display: flex;
+        margin-bottom: 20px;
+        i {
+          margin-right: 20px;
+        }
+      }
+      .find-all {
+        display: flex;
+        i {
+          margin-right: 31px;
+          padding-left: 1%;
+        }
+      }
+    }
+  }
+}

@@ -16,5 +16,9 @@ angular.module('app', ['ui.router'])
       url: '/join',
       templateUrl: './views/join.html'
     })
+    .state('find', {
+      url: '/find',
+      templateUrl: './views/find.html'
+    })
 
 })

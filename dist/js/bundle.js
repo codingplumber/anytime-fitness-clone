@@ -13,6 +13,9 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
   }).state('join', {
     url: '/join',
     templateUrl: './views/join.html'
+  }).state('find', {
+    url: '/find',
+    templateUrl: './views/find.html'
   });
 });
 'use strict';

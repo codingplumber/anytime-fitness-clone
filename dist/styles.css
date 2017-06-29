@@ -7,6 +7,67 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
+.find-wrapper .find {
+  background: url("./images/join/gym-finder-background.jpg") no-repeat;
+  background-size: cover;
+  height: 652px;
+  width: 100%;
+  background-position-x: 50%;
+  color: #ffffff;
+  text-align: center;
+  padding: 56px 40px 160px 56px;
+  font-family: "roboreg";
+  font-size: 55px; }
+  .find-wrapper .find .find-heading {
+    margin-bottom: 29px; }
+    .find-wrapper .find .find-heading p {
+      line-height: 77px; }
+  .find-wrapper .find .find-search {
+    display: flex;
+    heigth: 160px;
+    width: 100%;
+    margin-bottom: 56px; }
+    .find-wrapper .find .find-search input {
+      height: 160px;
+      width: 78%;
+      border-radius: 20px 0 0 20px;
+      border: none;
+      font-size: 44px;
+      padding-left: 56px;
+      font-family: "roboreg"; }
+    .find-wrapper .find .find-search button {
+      height: 160px;
+      width: 22%;
+      background: #804c9e;
+      border-radius: 0 20px 20px 0;
+      border: none;
+      color: #ffffff;
+      font-size: 67px; }
+  .find-wrapper .find .find-locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 13%; }
+    .find-wrapper .find .find-locations .find-current {
+      display: flex;
+      margin-bottom: 20px; }
+      .find-wrapper .find .find-locations .find-current i {
+        margin-right: 20px; }
+    .find-wrapper .find .find-locations .find-all {
+      display: flex; }
+      .find-wrapper .find .find-locations .find-all i {
+        margin-right: 31px;
+        padding-left: 1%; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@font-face {
+  font-family: "averta";
+  src: url(./fonts/averta-bold-5949306582138.otf); }
+
+@font-face {
+  font-family: "roboreg";
+  src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
 .footer-bottom {
   background: #333;
   padding: 180px 54px; }
