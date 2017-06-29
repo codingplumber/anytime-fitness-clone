@@ -341,12 +341,12 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
-.join-wrapper .join-top-underlay {
+.join-wrapper .join-1 {
   height: 1406px;
   width: 100%;
   background: #231f2b;
   opacity: 0.95; }
-  .join-wrapper .join-top-underlay .join-top {
+  .join-wrapper .join-1 .join-top {
     background: url("./images/join/crop.jpg") no-repeat;
     background-size: cover;
     height: 1406px;
@@ -356,16 +356,16 @@
     color: #ffffff;
     text-align: center;
     padding: 156px 20px 75px 20px; }
-    .join-wrapper .join-top-underlay .join-top p:first-of-type {
+    .join-wrapper .join-1 .join-top p:first-of-type {
       font-size: 150px;
       font-family: "averta";
       margin-bottom: 50px; }
-    .join-wrapper .join-top-underlay .join-top p:last-of-type {
+    .join-wrapper .join-1 .join-top p:last-of-type {
       font-size: 49px;
       line-height: 64px;
       font-family: "roboreg";
       margin-bottom: 50px; }
-    .join-wrapper .join-top-underlay .join-top button {
+    .join-wrapper .join-1 .join-top button {
       background-color: transparent;
       height: 163px;
       width: 640px;
@@ -378,11 +378,177 @@
       justify-content: space-around;
       align-items: center;
       padding: 0 82px; }
-      .join-wrapper .join-top-underlay .join-top button p {
+      .join-wrapper .join-1 .join-top button p {
         font-family: "averta"; }
-      .join-wrapper .join-top-underlay .join-top button i {
+      .join-wrapper .join-1 .join-top button i {
         font-size: 2em;
         opacity: 0.6; }
+
+.join-wrapper .join-2 {
+  padding: 370px 37px 250px 37px; }
+  .join-wrapper .join-2 .join-desc {
+    margin-bottom: 184px;
+    text-align: center; }
+    .join-wrapper .join-2 .join-desc img {
+      width: 122px;
+      height: auto;
+      margin-bottom: 76px; }
+    .join-wrapper .join-2 .join-desc p:first-of-type {
+      font-family: "averta";
+      font-size: 92px;
+      margin-bottom: 85px; }
+    .join-wrapper .join-2 .join-desc p:last-of-type {
+      font-family: "roboreg";
+      font-size: 14px;
+      line-height: 75px; }
+
+.join-wrapper .join-3 .join-single-bottom {
+  background: url("./images/join/trees.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1300px;
+  color: #ffffff;
+  padding: 301px 37px 301px 37px; }
+  .join-wrapper .join-3 .join-single-bottom p:first-of-type {
+    font-family: "averta";
+    font-size: 60px;
+    font-size: 125px;
+    line-height: 144px;
+    margin-bottom: 30px; }
+  .join-wrapper .join-3 .join-single-bottom p:last-of-type {
+    font-family: "roboreg";
+    font-size: 45px;
+    font-size: 55px;
+    line-height: 75px;
+    margin-bottom: 90px; }
+  .join-wrapper .join-3 .join-single-bottom button {
+    background-color: transparent;
+    height: 163px;
+    width: 830px;
+    border: #ffffff 9px solid;
+    border-radius: 82px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 82px;
+    font-family: "averta"; }
+
+.join-wrapper .join-3 .join-triple-bottom a {
+  text-decoration: none; }
+  .join-wrapper .join-3 .join-triple-bottom a .join-t-img {
+    height: 609px;
+    width: 100%;
+    background-position-x: 50%;
+    padding: 44px;
+    color: #ffffff;
+    position: relative; }
+    .join-wrapper .join-3 .join-triple-bottom a .join-t-img p {
+      font-family: "roboreg";
+      font-size: 54px;
+      line-height: 77px; }
+    .join-wrapper .join-3 .join-triple-bottom a .join-t-img .join-3-vid {
+      display: flex;
+      position: absolute;
+      bottom: 41px;
+      margin-left: 8px; }
+      .join-wrapper .join-3 .join-triple-bottom a .join-t-img .join-3-vid p {
+        font-family: "averta";
+        font-size: 48px;
+        margin-right: 49px; }
+      .join-wrapper .join-3 .join-triple-bottom a .join-t-img .join-3-vid i {
+        font-size: 68px; }
+
+.join-wrapper .join-4 .join-4-heading {
+  font-size: 123px;
+  line-height: 147px;
+  font-family: "averta";
+  color: #231f2b;
+  text-align: center;
+  padding: 320px 70px 110px 70px; }
+
+.join-wrapper .join-4 .join-lists {
+  margin-bottom: 290px;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px; }
+  .join-wrapper .join-4 .join-lists .join-list {
+    margin-bottom: 158px; }
+    .join-wrapper .join-4 .join-lists .join-list .join-list-subheading img {
+      height: 100px;
+      width: auto;
+      margin-bottom: 46px; }
+    .join-wrapper .join-4 .join-lists .join-list .join-list-subheading h3 {
+      font-size: 94px;
+      font-family: "averta";
+      color: #776096;
+      margin-bottom: 80px; }
+    .join-wrapper .join-4 .join-lists .join-list p {
+      font-size: 53px;
+      font-family: "roboreg";
+      color: #666;
+      margin-bottom: 72px; }
+
+.join-wrapper .join-4 .join-disclaimer {
+  font-size: 14px;
+  font-family: "roboreg";
+  color: #231f2b;
+  margin-bottom: 290px;
+  padding-left: 35px;
+  padding-right: 35px;
+  line-height: 39px; }
+
+.join-wrapper .join-5 {
+  background: url("./images/join/gym-finder-background.jpg") no-repeat;
+  background-size: cover;
+  height: 837px;
+  width: 100%;
+  background-position-x: 50%;
+  color: #ffffff;
+  text-align: center;
+  padding: 160px 40px 160px 40px; }
+  .join-wrapper .join-5 h2 {
+    font-family: "averta";
+    font-size: 78px;
+    line-height: 110px; }
+  .join-wrapper .join-5 p {
+    font-family: "roboreg";
+    font-size: 50px;
+    margin-bottom: 83px; }
+  .join-wrapper .join-5 .join-search {
+    display: flex;
+    heigth: 160px;
+    width: 100%; }
+    .join-wrapper .join-5 .join-search input {
+      height: 160px;
+      width: 78%;
+      border-radius: 20px 0 0 20px;
+      border: none;
+      font-size: 44px;
+      padding-left: 56px;
+      font-family: "roboreg"; }
+    .join-wrapper .join-5 .join-search button {
+      height: 160px;
+      width: 22%;
+      background: #804c9e;
+      border-radius: 0 20px 20px 0;
+      border: none;
+      color: #ffffff;
+      font-size: 67px; }
+
+.join-img-1 {
+  background: url("./images/join/face.jpg") no-repeat;
+  background-size: cover; }
+
+.join-img-2 {
+  background: url("./images/join/threewomen.jpg") no-repeat;
+  background-size: cover; }
+
+.join-img-3 {
+  background: url("./images/join/girl.jpg") no-repeat;
+  background-size: cover; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
