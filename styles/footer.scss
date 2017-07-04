@@ -90,3 +90,103 @@
     }
   }
 }
+
+
+
+
+@media only screen and (min-width: 770px) {
+  .footer-bottom {
+    padding: 77px 23px;
+    display: flex;
+    .footer-bottom-nav {
+      display: flex;
+      margin-bottom: 100px;
+      width: 75%;
+      .footer-bottom-text {
+        width: 33.333%;
+        .footer-bottom-heading {
+          margin-bottom: 12px;
+        }
+        .footer-bottom-subheading {
+          p {
+            font-size: 14px;
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom-etc {
+      text-align: right;
+      width: 25%;
+      position: relative;
+      .footer-social-media {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 100px;
+        .footer-social-circle {
+          height: 51px;
+          width: 51px;
+          border: #888 3px solid;
+
+
+          border-radius: 50%;
+          background-color: transparent;
+          display: flex;
+          // margin-bottom: 20px;
+          // margin-right: 18px;
+          text-align: right;
+
+
+          a {
+            text-decoration: none;
+            i {
+              color: #888;
+            }
+            .i1 {
+              font-size: 30px;
+            }
+            .i2 {
+              font-size: 28px;
+            }
+            .i3 {
+              font-size: 21px;
+            }
+            .i4 {
+              font-size: 28px;
+            }
+            .i5 {
+              font-size: 29px;
+            }
+            .i6 {
+              font-size: 29px;
+            }
+            .i7 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .footer-self-esteem {
+        font-size: 18px;
+        position: absolute;
+        right: 0;
+        width: 418px;
+        img {
+          height: 63px;
+          width: auto;
+          margin-bottom: 12px;
+        }
+        .footer-bottom-tm {
+          margin-bottom: 2px;
+          span {
+            font-size: 16px;
+          }
+        }
+        .footer-bottom-c {
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}

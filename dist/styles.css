@@ -133,6 +133,71 @@
     .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-c {
       line-height: 50px; }
 
+@media only screen and (min-width: 770px) {
+  .footer-bottom {
+    padding: 77px 23px;
+    display: flex; }
+    .footer-bottom .footer-bottom-nav {
+      display: flex;
+      margin-bottom: 100px;
+      width: 75%; }
+      .footer-bottom .footer-bottom-nav .footer-bottom-text {
+        width: 33.333%; }
+        .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-heading {
+          margin-bottom: 12px; }
+        .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-subheading p {
+          font-size: 14px;
+          margin-bottom: 1px; }
+    .footer-bottom .footer-bottom-etc {
+      text-align: right;
+      width: 25%;
+      position: relative; }
+      .footer-bottom .footer-bottom-etc .footer-social-media {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 100px; }
+        .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle {
+          height: 51px;
+          width: 51px;
+          border: #888 3px solid;
+          border-radius: 50%;
+          background-color: transparent;
+          display: flex;
+          text-align: right; }
+          .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a {
+            text-decoration: none; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a i {
+              color: #888; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i1 {
+              font-size: 30px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i2 {
+              font-size: 28px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i3 {
+              font-size: 21px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i4 {
+              font-size: 28px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i5 {
+              font-size: 29px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i6 {
+              font-size: 29px; }
+            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i7 {
+              font-size: 30px; }
+      .footer-bottom .footer-bottom-etc .footer-self-esteem {
+        font-size: 18px;
+        position: absolute;
+        right: 0;
+        width: 418px; }
+        .footer-bottom .footer-bottom-etc .footer-self-esteem img {
+          height: 63px;
+          width: auto;
+          margin-bottom: 12px; }
+        .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm {
+          margin-bottom: 2px; }
+          .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm span {
+            font-size: 16px; }
+        .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-c {
+          line-height: 50px; } }
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
   font-family: "averta";
@@ -303,8 +368,7 @@
         text-align: center;
         margin-bottom: 139px; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p {
-          filter: brightness(150%);
-          font-size: 4em;
+          font-size: 62px;
           color: #ffffff;
           font-family: "averta";
           line-height: 80px;
@@ -335,11 +399,11 @@
         position: relative;
         margin-bottom: 200px; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text1 {
-          font-size: 5.75em;
+          font-size: 95px;
           font-family: "roboreg";
           margin-bottom: 42px; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 {
-          font-size: 10em;
+          font-size: 156px;
           font-family: "averta"; }
           .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 sup {
             font-size: 50%;
@@ -351,12 +415,12 @@
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button {
           background-color: transparent;
           height: 163px;
-          width: 73%;
+          width: 669px;
           border: #ffffff 9px solid;
           border-radius: 82px;
           color: #ffffff;
           text-align: center;
-          font-size: 3em;
+          font-size: 50px;
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -370,16 +434,19 @@
     height: 1173px;
     width: 100%;
     filter: brightness(77%);
-    font-size: 5.5em;
+    font-size: 93px;
+    line-height: 120px;
     color: #ffffff;
     text-align: center;
     font-family: "averta";
-    padding: 0 56px;
+    padding: 0 37px;
     display: flex;
     align-items: center; }
-    .home-main-wrapper .home-middle .home-middle-div span {
+    .home-main-wrapper .home-middle .home-middle-div .home-mid-span2 {
       font-family: "Open Sans", sans-serif;
       font-size: 105%; }
+    .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
+      visibility: hidden; }
   .home-main-wrapper .home-middle .home-div1 {
     background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
     background-size: cover;
@@ -392,6 +459,135 @@
     background: url("./images/home/Rugged3.jpg") no-repeat;
     background-size: cover;
     background-position-x: 50%; }
+
+@media only screen and (min-width: 770px) {
+  .home-main-wrapper .home-dark-underlay {
+    background: #333;
+    width: 100%;
+    height: 1061px; }
+    .home-main-wrapper .home-dark-underlay .home-top {
+      background: url("./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg") no-repeat;
+      background-size: cover;
+      background-position-x: 50%;
+      opacity: 0.75;
+      height: 1061px;
+      width: 100%;
+      padding: 328px 40px 0 40px;
+      display: flex;
+      flex-direction: column; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 {
+        text-align: center;
+        margin-bottom: 106px;
+        order: 2; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p {
+          font-size: 37px;
+          color: #ffffff;
+          font-family: "averta";
+          line-height: 30px; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p span {
+            display: none; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search {
+          display: flex;
+          heigth: 160px;
+          width: 100%;
+          justify-content: center; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search input {
+            height: 70px;
+            width: 385px;
+            border-radius: 8px 0 0 8px;
+            border: none;
+            font-size: 20px;
+            padding-left: 24px;
+            font-family: "roboreg"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search button {
+            height: 70px;
+            width: 79px;
+            background: #804c9e;
+            border-radius: 0 8px 8px 0;
+            border: none;
+            color: #ffffff;
+            font-size: 28px; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        margin-bottom: 91px;
+        order: 1; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text1 {
+          font-size: 51px;
+          font-family: "roboreg";
+          margin-bottom: 18px; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 {
+          font-size: 89px;
+          line-height: 103px;
+          font-family: "averta"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 sup {
+            font-size: 50%;
+            position: absolute;
+            bottom: 29px; }
+      .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 {
+        display: flex;
+        justify-content: center;
+        order: 3; }
+        .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button {
+          background-color: transparent;
+          height: 75px;
+          width: 284px;
+          border: #ffffff 4px solid;
+          border-radius: 62px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 23px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 18px; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button p {
+            font-family: "averta"; }
+          .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
+            font-size: 2em;
+            opacity: 0.6; }
+  .home-main-wrapper .home-middle {
+    display: flex; }
+    .home-main-wrapper .home-middle .home-middle-div {
+      height: 490px;
+      width: 33.333%;
+      filter: brightness(77%);
+      font-size: 48px;
+      color: #ffffff;
+      font-family: "averta";
+      padding: 0 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .home-main-wrapper .home-middle .home-middle-div .home-mid-span1 {
+        display: block; }
+        .home-main-wrapper .home-middle .home-middle-div .home-mid-span1 .home-mid-span2 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 105%; }
+      .home-main-wrapper .home-middle .home-middle-div p:first-of-type {
+        line-height: 53px;
+        margin-bottom: 10px; }
+      .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
+        visibility: visible;
+        font-size: 21px;
+        line-height: 28px;
+        font-family: "roboreg"; }
+    .home-main-wrapper .home-middle .home-div1 {
+      background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
+      background-size: cover;
+      background-position-x: 50%; }
+    .home-main-wrapper .home-middle .home-div2 {
+      background: url("./images/home/App.jpg") no-repeat;
+      background-size: cover;
+      background-position-x: 50%; }
+    .home-main-wrapper .home-middle .home-div3 {
+      background: url("./images/home/Rugged3.jpg") no-repeat;
+      background-size: cover;
+      background-position-x: 50%; }
+      .home-main-wrapper .home-middle .home-div3 p:first-of-type {
+        font-size: 48px; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {

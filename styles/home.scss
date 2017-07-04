@@ -21,8 +21,8 @@
         text-align: center;
         margin-bottom: 139px;
         p {
-          filter: brightness(150%);
-          font-size: 4em;
+          // filter: brightness(150%);
+          font-size: 62px;
           color: #ffffff;
           font-family: $av;
           line-height: 80px;
@@ -58,12 +58,12 @@
         position: relative;
         margin-bottom: 200px;
         .home-div2-text1 {
-          font-size: 5.75em;
+          font-size: 95px;
           font-family: $robreg;
           margin-bottom: 42px;
         }
         .home-div2-text2 {
-          font-size: 10em;
+          font-size: 156px;
           font-family: $av;
           sup {
             font-size: 50%;
@@ -78,12 +78,12 @@
         button {
           background-color: transparent;
           height: 163px;
-          width: 73%;
+          width: 669px;
           border: #ffffff 9px solid;
           border-radius: 82px;
           color: #ffffff;
           text-align: center;
-          font-size: 3em;
+          font-size: 50px;
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -105,16 +105,20 @@
       height: 1173px;
       width: 100%;
       filter: brightness(77%);
-      font-size: 5.5em;
+      font-size: 93px;
+      line-height: 120px;
       color: #ffffff;
       text-align: center;
       font-family: $av;
-      padding: 0 56px;
+      padding: 0 37px;
       display: flex;
       align-items: center;
-      span {
+      .home-mid-span2 {
         font-family: $sans;
         font-size: 105%;
+      }
+      .home-middle-hide {
+        visibility: hidden;
       }
     }
     .home-div1 {
@@ -131,6 +135,173 @@
       background: url('./images/home/Rugged3.jpg') no-repeat;
       background-size: cover;
       background-position-x: 50%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 770px) {
+  .home-main-wrapper {
+    .home-dark-underlay {
+      background: #333;
+      width: 100%;
+      height: 1061px;
+      .home-top {
+        background: url('./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.75;
+        height: 1061px;
+        width: 100%;
+        padding: 328px 40px 0 40px;
+        display: flex;
+        flex-direction: column;
+        .home-top-div1 {
+          text-align: center;
+          margin-bottom: 106px;
+          order: 2;
+          p {
+            // filter: brightness(150%);
+            font-size: 37px;
+            color: #ffffff;
+            font-family: $av;
+            line-height: 30px;
+            span {
+              display: none;
+            }
+          }
+          .home-location-search {
+            display: flex;
+            heigth: 160px;
+            width: 100%;
+            justify-content: center;
+            input {
+              height: 70px;
+              width: 385px;
+              border-radius: 8px 0 0 8px;
+              border: none;
+              font-size: 20px;
+              padding-left: 24px;
+              font-family: $robreg;
+            }
+            button {
+              height: 70px;
+              width: 79px;
+              background: #804c9e;
+              border-radius: 0 8px 8px 0;
+              border: none;
+              color: #ffffff;
+              font-size: 28px;
+            }
+          }
+        }
+        .home-top-div2 {
+          color: #fff;
+          text-align: center;
+          position: relative;
+          margin-bottom: 91px;
+          order: 1;
+          .home-div2-text1 {
+            font-size: 51px;
+            font-family: $robreg;
+            margin-bottom: 18px;
+          }
+          .home-div2-text2 {
+            font-size: 89px;
+            line-height: 103px;
+            font-family: $av;
+            sup {
+              font-size: 50%;
+              position: absolute;
+              bottom: 29px;
+            }
+          }
+        }
+        .home-top-div3 {
+          display: flex;
+          justify-content: center;
+          order: 3;
+          button {
+            background-color: transparent;
+            height: 75px;
+            width: 284px;
+            border: #ffffff 4px solid;
+            border-radius: 62px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 23px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 18px;
+            p {
+              font-family: $av;
+            }
+            i {
+              font-size: 2em;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+
+    .home-middle {
+      display: flex;
+      .home-middle-div {
+        height: 490px;
+        width: 33.333%;
+        filter: brightness(77%);
+        font-size: 48px;
+        color: #ffffff;
+        font-family: $av;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .home-mid-span1 {
+          display: block;
+          .home-mid-span2 {
+            font-family: $sans;
+            font-size: 105%;
+          }
+        }
+        p:first-of-type {
+          line-height: 53px;
+          margin-bottom: 10px;
+        }
+        .home-middle-hide {
+          visibility: visible;
+          font-size: 21px;
+          line-height: 28px;
+          font-family: $robreg;
+        }
+      }
+      .home-div1 {
+        background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+      }
+      .home-div2 {
+        background: url('./images/home/App.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+      }
+      .home-div3 {
+        background: url('./images/home/Rugged3.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+        p:first-of-type {
+          font-size: 48px;
+        }
+      }
     }
   }
 }
