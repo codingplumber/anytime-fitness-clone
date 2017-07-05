@@ -1,5 +1,7 @@
 @import 'fonts';
 
+@media only screen and (max-width: 770px) {
+
 .header-wrapper {
   text-transform: uppercase;
   font-family: $av;
@@ -150,4 +152,46 @@
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+.header-wrapper2 {
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 770px) {
+  .header-wrapper {
+    display: none;
+  }
+
+  .header-wrapper2 {
+    display: block;
+    position: fixed;
+    height: 88px;
+    width: 100%;
+    background: rgba(128,76,158, .9);
+    z-index: 100;
+    text-transform: uppercase;
+    font-family: $av;
+    display: flex;
+    text-align: center;
+    padding: 20px 20px;
+    .header-icon {
+      height: 47px;
+      width: auto;
+      margin-right: 20px;
+    }
+    .header-links-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .header-links {
+        text-decoration: none;
+        font-size: 17px;
+        color: #ffffff;
+      }
+    }
+  }
 }
