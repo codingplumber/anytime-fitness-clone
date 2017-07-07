@@ -64,3 +64,82 @@
     }
   }
 }
+
+
+
+
+
+@media only screen and (min-width: 770px) {
+  header {
+    top: 0;
+    position: fixed;
+  }
+  .find-wrapper {
+    margin-top: 87px;
+    .find {
+      height: 250px;
+      padding: 1px 0px 1px 0px;
+      font-size: 24px;
+      .find-heading {
+        margin-bottom: 4px;
+        display: flex;
+        justify-content: center;
+        p:first-of-type {
+          margin-right: 3px;
+
+
+          
+          line-height: 0;
+
+
+
+        }
+      }
+      .find-search {
+        display: flex;
+        heigth: 67px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        input {
+          height: 67px;
+          width: 384px;
+          border-radius: 10px 0 0 10px;
+          font-size: 19px;
+          padding-left: 26px;
+        }
+        button {
+          height: 67px;
+          width: 75px;
+          border-radius: 0 10px 10px 0;
+          font-size: 27px;
+        }
+      }
+      .find-locations {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 13%;
+        .find-current {
+          display: flex;
+          margin-bottom: 20px;
+          i {
+            margin-right: 20px;
+          }
+        }
+        .find-all {
+          display: flex;
+          i {
+            margin-right: 31px;
+            padding-left: 1%;
+          }
+        }
+      }
+    }
+    .find-map {
+      height: 681px;
+      width: 100%;
+    }
+  }
+
+}
