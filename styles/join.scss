@@ -9,29 +9,29 @@
     .join-top {
       background: url('./images/join/crop.jpg') no-repeat;
       background-size: cover;
-      height: 1406px;
+      height: 466px;
       width: 100%;
       background-position-x: 50%;
       // opacity: 0.75;
       color: #ffffff;
       text-align: center;
-      padding: 156px 20px 75px 20px;
+      padding: 50px 13px 50px 13px;
       p:first-of-type {
-        font-size: 150px;
+        font-size: 50px;
         font-family: $av;
-        margin-bottom: 50px;
+        margin-bottom: 13px;
       }
       p:last-of-type {
-        font-size: 49px;
-        line-height: 64px;
+        font-size: 16px;
+        line-height: 22px;
         font-family: $robreg;
-        margin-bottom: 50px;
+        margin-bottom: 37px;
       }
       button {
         background-color: transparent;
-        height: 163px;
-        width: 640px;
-        border: #ffffff 9px solid;
+        height: 54px;
+        width: 210px;
+        border: #ffffff 3px solid;
         border-radius: 82px;
         color: #ffffff;
         text-align: center;
@@ -39,39 +39,49 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 82px;
-
+        padding: 0 24px;
         margin: 0 auto;
         .join-tour {
           font-family: $av;
         }
         i {
-          font-size: 2em;
-          opacity: 0.6;
+          font-size: 37px;
+          opacity: 0.4;
         }
       }
     }
   }
 
   .join-2 {
-    padding: 370px 37px 250px 37px;
+    padding: 120px 11px 82px 11px;
     .join-desc {
-      margin-bottom: 184px;
+      margin-bottom: 55px;
       text-align: center;
       img {
-        width: 122px;
         height: auto;
-        margin-bottom: 76px;
+        margin-bottom: 22px;
+      }
+      .join2-img1 {
+        width: 44px;
+      }
+      .join2-img2 {
+        width: 44px;
+      }
+      .join2-img3 {
+        width: 32px;
+      }
+      .join2-img4 {
+        width: 47px;
       }
       p:first-of-type {
         font-family: $av;
-        font-size: 92px;
-        margin-bottom: 85px;
+        font-size: 30px;
+        margin-bottom: 29px;
       }
       p:last-of-type {
         font-family: $robreg;
         font-size: 14px;
-        line-height: 75px;
+        line-height: 26px;
       }
     }
   }
@@ -81,39 +91,36 @@
       background: url('./images/join/trees.jpg') no-repeat;
       background-size: cover;
       width: 100%;
-      height: 1300px;
+      height: 429px;
       color: #ffffff;
-      padding: 301px 37px 301px 37px;
+      padding: 100px 10px 100px 15px;
       p:first-of-type {
         font-family: $av;
-        // font-size: 60px;
-        font-size: 125px;
-        line-height: 144px;
-        margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 9px;
       }
       p:last-of-type {
         font-family: $robreg;
-        // font-size: 45px;
-        font-size: 55px;
-        line-height: 75px;
-        margin-bottom: 90px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 25px;
       }
       button {
         background-color: transparent;
-        height: 163px;
-        width: 830px;
-        border: #ffffff 9px solid;
+        height: 54px;
+        width: 266px;
+        border: #ffffff 3px solid;
         border-radius: 82px;
         color: #ffffff;
         text-align: center;
-        font-size: 3em;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 82px;
-        font-family: $av;
-        p {
-          // font-family: $av;
+        padding: 0 13px;
+        .join-catherine {
+          font-family: $av;
+          font-size: 16px;
         }
       }
     }
@@ -121,29 +128,29 @@
       a {
         text-decoration: none;
         .join-t-img {
-          height: 609px;
+          height: 200px;
           width: 100%;
           background-position-x: 50%;
-          padding: 44px;
+          padding: 12px 15px;
           color: #ffffff;
           position: relative;
           p {
             font-family: $robreg;
-            font-size: 54px;
-            line-height: 77px;
+            font-size: 18px;
+            line-height: 25px;
           }
           .join-3-vid {
             display: flex;
             position: absolute;
-            bottom: 41px;
-            margin-left: 8px;
+            bottom: 14px;
+            margin-left: 0px;
             p {
               font-family: $av;
-              font-size: 48px;
-              margin-right: 49px;
+              font-size: 16px;
+              margin-right: 18px;
             }
             i {
-              font-size: 68px;
+              font-size: 22px;
             }
           }
         }
@@ -153,92 +160,91 @@
 
   .join-4 {
     .join-4-heading {
-      font-size: 123px;
-      line-height: 147px;
+      font-size: 40px;
+      line-height: 45px;
       font-family: $av;
       color: #231f2b;
       text-align: center;
-      padding: 320px 70px 110px 70px;
+      padding: 100px 15px 71px 15px;
     }
     .join-lists {
-      margin-bottom: 290px;
+      margin-bottom: 95px;
       text-align: center;
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
       .join-list {
-        margin-bottom: 158px;
+        margin-bottom: 52px;
         .join-list-subheading {
           img {
-            height: 100px;
+            height: 35px;
             width: auto;
-            margin-bottom: 46px;
+            margin-bottom: 13px;
           }
           h3 {
-            font-size: 94px;
+            font-size: 30px;
             font-family: $av;
             color: #776096;
-            margin-bottom: 80px;
+            margin-bottom: 24px;
           }
         }
         p {
-          font-size: 53px;
+          font-size: 22px;
           font-family: $robreg;
           color: #666;
-          margin-bottom: 72px;
+          margin-bottom: 23px;
         }
       }
     }
     .join-disclaimer {
       font-size: 14px;
-      font-family: $robreg;
+      font-family: $sans;
       color: #231f2b;
-      margin-bottom: 290px;
-      padding-left: 35px;
-      padding-right: 35px;
-      line-height: 39px;
+      margin-bottom: 100px;
+      padding-left: 15px;
+      line-height: 20px;
     }
   }
 
   .join-5 {
     background: url('./images/join/gym-finder-background.jpg') no-repeat;
     background-size: cover;
-    height: 837px;
+    height: 277px;
     width: 100%;
     background-position-x: 50%;
     color: #ffffff;
     text-align: center;
-    padding: 160px 40px 160px 40px;
+    padding: 49px 15px 35px 15px;
     h2 {
       font-family: $av;
-      font-size: 78px;
-      line-height: 110px;
+      font-size: 24px;
+      line-height: 34px;
     }
     p {
       font-family: $robreg;
-      font-size: 50px;
-      margin-bottom: 83px;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
     .join-search {
       display: flex;
-      heigth: 160px;
+      heigth: 52px;
       width: 100%;
       input {
-        height: 160px;
-        width: 78%;
-        border-radius: 20px 0 0 20px;
+        height: 52px;
+        width: 80%;
+        border-radius: 6px 0 0 6px;
         border: none;
-        font-size: 44px;
-        padding-left: 56px;
+        font-size: 15px;
+        padding-left: 22px;
         font-family: $robreg;
       }
       button {
-        height: 160px;
-        width: 22%;
+        height: 52px;
+        width: 58px;
         background: #804c9e;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 6px 6px 0;
         border: none;
         color: #ffffff;
-        font-size: 67px;
+        font-size: 21px;
       }
     }
   }
@@ -259,34 +265,34 @@
 
 
 
-@media only screen and (min-width: 770px) {
+@media (min-width: 770px) {
   .join-wrapper {
     .join-1 {
       .join-top {
-        height: 725px;
-        padding: 203px 10px 75px 10px;
+        height: 570px;
+        padding: 160px 10px 75px 10px;
         p:first-of-type {
-          font-size: 90px;
-          line-height: 103px;
+          font-size: 70px;
+          line-height: 80px;
           margin-bottom: 13px;
         }
         p:last-of-type {
-          font-size: 21px;
-          line-height: 28px;
-          margin-bottom: 50px;
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 38px;
         }
         button {
-          height: 75px;
-          width: 266px;
+          height: 58px;
+          width: 215px;
           border: #ffffff 4px solid;
           border-radius: 76px;
-          padding: 0 27px;
+          padding: 0 22px;
           .join-tour {
             font-family: $av;
             margin-bottom: 0px;
           }
           i {
-            font-size: 1em;
+            font-size: 36px;
             opacity: 0.4;
           }
         }
@@ -294,117 +300,111 @@
     }
 
     .join-2 {
-      padding: 126px 5px 126px 5px;
+      padding: 104px 5px 98px 5px;
       display: flex;
       flex-wrap: wrap;
       .join-desc {
         margin-bottom: 0;
         width: 50%;
-        padding-bottom: 57px;
+        padding-bottom: 32px;
         img {
           margin-bottom: 28px;
         }
+        .join2-img2 {
+          width: 42px;
+        }
         p:first-of-type {
-          font-size: 40px;
-          margin-bottom: 38px;
+          font-size: 30px;
+          margin-bottom: 30px;
         }
         p:last-of-type {
-          font-size: 18px;
-          line-height: 32px;
+          font-size: 14px;
+          line-height: 26px;
         }
       }
       .join-desc1 {
         border-right: 1px solid #999;
         border-bottom: 1px solid #999;
-        padding-left: 28px;
-        padding-right: 62px;
+        padding-left: 22px;
+        padding-right: 53px;
         img {
-          width: 55px;
+          margin-bottom: 24px;
         }
       }
       .join-desc2 {
         border-bottom: 1px solid #999;
-        padding-left: 62px;
-        padding-right: 28px;
-        img {
-          width: 52px;
-        }
+        padding-left: 55px;
+        padding-right: 25px;
       }
       .join-desc3 {
         border-right: 1px solid #999;
-        padding-top: 57px;
-        padding-left: 28px;
-        padding-right: 62px;
-        img {
-          width: 42px;
-        }
+        padding-top: 39px;
+        padding-left: 22px;
+        padding-right: 51px;
       }
       .join-desc4 {
-        padding-top: 57px;
-        padding-left: 62px;
-        padding-right: 28px;
-        img {
-          width: 60px;
-        }
+        padding-top: 39px;
+        padding-left: 55px;
+        padding-right: 20px;
       }
     }
 
     .join-3 {
       position: relative;
       .join-single-bottom {
-        height: 560px;
-        padding: 167px 10px 150px 34px;
+        height: 442px;
+        padding: 133px 10px 150px 23px;
         p:first-of-type {
-          font-size: 76px;
+          font-size: 60px;
           line-height: 0;
-          margin-bottom: 30px;
+          margin-bottom: 41px;
         }
         p:last-of-type {
-          font-size: 23px;
-          margin-bottom: 14px;
+          font-size: 18px;
+          margin-bottom: 26px;
         }
         button {
-          height: 75px;
-          width: 340px;
-          border: #ffffff 4px solid;
+          height: 58px;
+          width: 267px;
+          border: #ffffff 3px solid;
           border-radius: 68px;
           padding: 0 2px;
           .join-catherine {
             font-family: $av;
-            font-size: 21px;
-            margin-top: 18px;
+            font-size: 16px;
+            margin-top: 27px;
           }
         }
       }
       .join-triple-bottom {
         width: 100%;
-        height: 256px;
+        height: 204px;
         display: flex;
         position: absolute;
-        bottom: -129px;
+        bottom: -104px;
         padding-left: 4%;
         padding-right: 4%;
         z-index: 4;
         a {
           width: 33.333%;
           .join-t-img {
-            height: 256px;
+            height: 204px;
             width: 100%;
-            padding: 19px 22px;
+            padding: 12px 16px;
             p {
-              font-size: 22px;
-              line-height: 32px;
+              font-size: 18px;
+              line-height: 25px;
             }
             .join-3-vid {
-              bottom: 18px;
+              bottom: 14px;
               margin-left:0px;
               p {
-                font-size: 20px;
-                margin-right: 15px;
+                font-size: 16px;
+                margin-right: 11px;
               }
               i {
-                font-size: 20px;
-                margin-top: 4px;
+                font-size: 19px;
+                margin-top: 3px;
               }
             }
           }
@@ -414,15 +414,15 @@
 
     .join-4 {
       .join-4-heading {
-        font-size: 78px;
-        line-height: 85px;
-        padding: 256px 0px 73px 0px;
+        font-size: 60px;
+        line-height: 65px;
+        padding: 204px 0px 73px 0px;
       }
       .join-lists {
         width: 100%;
         display: flex;
-        margin-bottom: 95px;
-        padding-left: 40px;
+        margin-bottom: 77px;
+        padding-left: 24px;
         padding-right: 0;
         .join-list {
           width: 33.333%;
@@ -433,64 +433,64 @@
           margin-bottom: 0px;
           .join-list-subheading {
             display: flex;
-            margin-bottom: 28px;
+            margin-bottom: 19px;
             img {
-              height: 44px;
+              height: 36px;
               margin-bottom: 0px;
-              margin-right: 27px;
+              margin-right: 16px;
             }
             h3 {
-              font-size: 38px;
+              font-size: 30px;
               margin-bottom: 0px;
-              margin-top: 5px;
+              margin-top: 7px;
             }
           }
           p {
-            font-size: 28px;
-            line-height: 37px;
-            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 16px;
           }
         }
       }
       .join-disclaimer {
-        font-size: 18px;
-        margin-bottom: 140px;
-        padding-left: 35px;
+        font-size: 14px;
+        margin-bottom: 113px;
+        padding-left: 24px;
         padding-right: 0;
         line-height: 0;
       }
     }
 
     .join-5 {
-      height: 305px;
+      height: 242px;
       text-align: center;
-      padding: 60px 0px 20px 0px;
+      padding: 50px 0px 20px 0px;
       h2 {
-        font-size: 31px;
-        line-height: 47px;
+        font-size: 24px;
+        line-height: 34px;
       }
       p {
-        font-size: 21px;
-        margin-bottom: 36px;
+        font-size: 16px;
+        margin-bottom: 33px;
       }
       .join-search {
         display: flex;
-        heigth: 67px;
+        heigth: 52px;
         width: 100%;
         display: flex;
         justify-content: center;
         input {
-          height: 67px;
-          width: 384px;
-          border-radius: 10px 0 0 10px;
-          font-size: 19px;
-          padding-left: 26px;
+          height: 52px;
+          width: 300px;
+          border-radius: 8px 0 0 8px;
+          font-size: 15px;
+          padding-left: 22px;
         }
         button {
-          height: 67px;
-          width: 75px;
-          border-radius: 0 10px 10px 0;
-          font-size: 27px;
+          height: 52px;
+          width: 65px;
+          border-radius: 0 8px 8px 0;
+          font-size: 21px;
         }
       }
     }
