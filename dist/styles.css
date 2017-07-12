@@ -67,21 +67,21 @@
     margin-top: 87px; }
     .find-wrapper .find {
       height: 250px;
-      padding: 1px 0px 1px 0px;
+      padding: 38px 0px 1px 0px;
       font-size: 24px; }
       .find-wrapper .find .find-heading {
-        margin-bottom: 4px;
+        margin-bottom: 28px;
         display: flex;
         justify-content: center; }
-        .find-wrapper .find .find-heading p:first-of-type {
+        .find-wrapper .find .find-heading p {
           margin-right: 3px;
           line-height: 0; }
       .find-wrapper .find .find-search {
         display: flex;
         heigth: 67px;
         width: 100%;
-        display: flex;
-        justify-content: center; }
+        justify-content: center;
+        margin-bottom: 25px; }
         .find-wrapper .find .find-search input {
           height: 67px;
           width: 384px;
@@ -94,20 +94,16 @@
           border-radius: 0 10px 10px 0;
           font-size: 27px; }
       .find-wrapper .find .find-locations {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-left: 13%; }
+        align-items: center;
+        padding-left: 0; }
         .find-wrapper .find .find-locations .find-current {
-          display: flex;
-          margin-bottom: 20px; }
+          margin-bottom: 9px; }
           .find-wrapper .find .find-locations .find-current i {
-            margin-right: 20px; }
+            margin-right: 14px; }
         .find-wrapper .find .find-locations .find-all {
-          display: flex; }
+          margin-right: 25px; }
           .find-wrapper .find .find-locations .find-all i {
-            margin-right: 31px;
-            padding-left: 1%; }
+            margin-right: 20px; }
     .find-wrapper .find-map {
       height: 681px;
       width: 100%; } }
@@ -123,73 +119,73 @@
 
 .footer-bottom {
   background: #333;
-  padding: 180px 54px; }
+  padding: 63px 18px; }
   .footer-bottom .footer-bottom-nav {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
     .footer-bottom .footer-bottom-nav .footer-bottom-text {
       text-transform: uppercase;
       font-family: "averta";
-      margin-bottom: 70px; }
+      margin-bottom: 29px; }
       .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-heading {
-        font-size: 21px;
+        font-size: 16px;
         color: #ffffff;
-        margin-bottom: 70px; }
+        margin-bottom: 19px; }
       .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-subheading p {
         color: #888;
         font-size: 14px;
-        margin-bottom: 60px;
-        line-height: 38px; }
+        margin-bottom: 19px;
+        line-height: 20px; }
   .footer-bottom .footer-bottom-etc .footer-social-media {
     display: flex;
-    flex-flow: wrap; }
+    flex-flow: row-reverse wrap; }
     .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle {
-      height: 125px;
-      width: 125px;
-      border: #888 8px solid;
+      height: 40px;
+      width: 40px;
+      border: #888 2px solid;
       border-radius: 50%;
       background-color: transparent;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 87px;
-      margin-right: 40px; }
+      margin-bottom: 28px;
+      margin-right: 13px; }
       .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a {
         text-decoration: none; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a i {
           color: #888; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i1 {
-          font-size: 78px; }
+          font-size: 26px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i2 {
-          font-size: 71px; }
+          font-size: 23px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i3 {
-          font-size: 56px; }
+          font-size: 19px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i4 {
-          font-size: 71px; }
+          font-size: 24px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i5 {
-          font-size: 73px; }
+          font-size: 23px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i6 {
-          font-size: 72px; }
+          font-size: 24px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i7 {
-          font-size: 80px; }
+          font-size: 27px; }
   .footer-bottom .footer-bottom-etc .footer-self-esteem {
     font-family: "roboreg";
     color: #888;
     font-size: 14px; }
     .footer-bottom .footer-bottom-etc .footer-self-esteem img {
-      height: 162px;
+      height: 52px;
       width: auto;
-      margin-bottom: 32px; }
+      margin-bottom: 8px; }
     .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm {
-      margin-bottom: 80px; }
+      margin-bottom: 24px; }
       .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm span {
         font-size: 16px; }
     .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-c {
-      line-height: 50px; }
+      line-height: 20px; }
 
-@media only screen and (min-width: 770px) {
+@media (min-width: 770px) {
   .footer-bottom {
-    height: 621px;
-    padding: 77px 23px;
+    height: 488px;
+    padding: 58px 21px;
     display: flex; }
     .footer-bottom .footer-bottom-nav {
       display: flex;
@@ -200,9 +196,9 @@
         .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-heading {
           margin-bottom: 17px; }
         .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-subheading p {
-          font-size: 18px;
-          margin-bottom: 13px;
-          line-height: 26px; }
+          font-size: 14px;
+          margin-bottom: 11px;
+          line-height: 19px; }
     .footer-bottom .footer-bottom-etc {
       text-align: right;
       width: 25%;
@@ -212,44 +208,29 @@
         flex-direction: row-reverse;
         margin-bottom: 100px; }
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle {
-          height: 51px;
-          width: 51px;
-          border: #888 3px solid;
+          height: 40px;
+          width: 40px;
+          border: #888 2px solid;
           display: flex;
-          margin-bottom: 20px;
-          margin-left: 20px;
+          margin-bottom: 16px;
+          margin-left: 16px;
           margin-right: 0; }
           .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a {
             text-decoration: none; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a i {
-              color: #888; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i1 {
-              font-size: 30px; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i2 {
-              font-size: 28px; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i3 {
-              font-size: 21px;
-              order: 3; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i4 {
-              font-size: 28px; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i5 {
-              font-size: 29px; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i6 {
-              font-size: 29px; }
-            .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i7 {
-              font-size: 30px; }
       .footer-bottom .footer-bottom-etc .footer-self-esteem {
-        font-size: 18px;
+        font-size: 14px;
         position: absolute;
         right: 0;
-        bottom: -21px;
+        bottom: -4px;
         width: 418px; }
         .footer-bottom .footer-bottom-etc .footer-self-esteem img {
-          height: 65px;
+          height: 52px;
           width: auto;
-          margin-bottom: 12px; }
+          margin-bottom: 10px; }
         .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-tm {
-          margin-bottom: 2px; } }
+          margin-bottom: 2px; }
+        .footer-bottom .footer-bottom-etc .footer-self-esteem .footer-bottom-c {
+          line-height: 37px; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
@@ -260,127 +241,139 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
-@media only screen and (max-width: 770px) {
-  .header-wrapper {
-    text-transform: uppercase;
-    font-family: "averta";
-    position: relative;
-    height: 218px;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out; }
-    .header-wrapper .header-left .header-top {
-      height: 220px;
-      width: 100%;
-      background: #804c9e;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      z-index: 10;
-      position: absolute;
-      justify-content: space-between;
-      padding: 0 55px 0 55px; }
-      .header-wrapper .header-left .header-top img {
-        height: 108px;
-        width: auto; }
-    .header-wrapper .header-left .header-mobile {
-      height: 170px;
-      width: 100%;
-      border-top: #996fb1 1px solid;
-      background: #804c9e;
-      display: flex;
-      align-items: center;
-      padding-left: 55px; }
-      .header-wrapper .header-left .header-mobile .header-links-mobile {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 43px; }
-    .header-wrapper .header-right {
-      height: 170px;
-      width: 100%;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      padding-left: 55px; }
-      .header-wrapper .header-right a {
-        text-decoration: none;
-        color: #804c9e;
-        font-size: 47px; }
-  #header-slide {
-    top: -972px;
-    position: absolute;
-    z-index: 5;
+.header-wrapper {
+  text-transform: uppercase;
+  font-family: "averta";
+  position: relative;
+  height: 69px;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+  .header-wrapper .header-left .header-top {
+    height: 70px;
     width: 100%;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out; }
-  #header-slide.down {
-    top: 220px; }
-  #header-wrapper-slide.down {
-    height: 1411px; }
-  #nav-icon3 {
-    width: 114px;
-    /*60px*/
-    height: 45px;
-    position: relative;
-    margin-bottom: 33px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer; }
-  #nav-icon3 span {
-    display: block;
+    background: #804c9e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    z-index: 10;
     position: absolute;
-    height: 13px;
+    justify-content: space-between;
+    padding: 0 17px 0 17px; }
+    .header-wrapper .header-left .header-top img {
+      height: 35px;
+      width: auto; }
+  .header-wrapper .header-left .header-mobile {
+    height: 55px;
+    width: 100%;
+    border-top: #996fb1 1px solid;
+    background: #804c9e;
+    display: flex;
+    align-items: center;
+    padding-left: 17px; }
+    .header-wrapper .header-left .header-mobile .header-links-mobile {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px; }
+  .header-wrapper .header-right {
+    height: 55px;
     width: 100%;
     background: #ffffff;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out; }
-  #nav-icon3 span:nth-child(1) {
-    top: 0px; }
-  #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
-    top: 35px;
-    /*18px*/ }
-  #nav-icon3 span:nth-child(4) {
-    top: 70px;
-    /*36px*/ }
-  #nav-icon3.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%; }
-  #nav-icon3.open span:nth-child(2) {
-    background: #000;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  #nav-icon3.open span:nth-child(3) {
-    background: #000;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-  #nav-icon3.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%; }
-  .header-wrapper2 {
-    display: none; } }
+    display: flex;
+    align-items: center;
+    padding-left: 17px; }
+    .header-wrapper .header-right a {
+      text-decoration: none;
+      color: #804c9e;
+      font-size: 16px; }
+
+#header-slide {
+  top: -972px;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#header-slide.down {
+  top: 70px; }
+
+#header-wrapper-slide.down {
+  height: 462px; }
+
+#nav-icon3 {
+  width: 36px;
+  /*60px*/
+  height: 27px;
+  position: relative;
+  margin-bottom: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 11px;
+  /*18px*/ }
+
+#nav-icon3 span:nth-child(4) {
+  top: 22px;
+  /*36px*/ }
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon3.open span:nth-child(2) {
+  background: #000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#nav-icon3.open span:nth-child(3) {
+  background: #000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.header-wrapper2 {
+  display: none; }
 
 @media only screen and (min-width: 770px) {
   .header-wrapper {
@@ -388,7 +381,7 @@
   .header-wrapper2 {
     display: block;
     position: fixed;
-    height: 88px;
+    height: 70px;
     width: 100%;
     background: rgba(128, 76, 158, 0.9);
     z-index: 1000;
@@ -396,9 +389,9 @@
     font-family: "averta";
     display: flex;
     text-align: center;
-    padding: 20px 20px; }
+    padding: 15px 15px; }
     .header-wrapper2 .header-icon {
-      height: 47px;
+      height: 35px;
       width: auto;
       margin-right: 20px; }
     .header-wrapper2 .header-links-main {
@@ -408,7 +401,7 @@
       width: 100%; }
       .header-wrapper2 .header-links-main .header-links {
         text-decoration: none;
-        font-size: 17px;
+        font-size: 14px;
         color: #ffffff; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
@@ -424,70 +417,70 @@
   background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
   background-size: cover;
   background-position-x: 50%;
-  height: 2020px;
+  height: 660px;
   width: 100%;
-  padding: 290px 40px 0 40px; }
+  padding: 95px 15px 0 15px; }
   .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 {
     text-align: center;
-    margin-bottom: 139px; }
+    margin-bottom: 45px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p {
-      font-size: 62px;
+      font-size: 20px;
       color: #ffffff;
       font-family: "averta";
-      line-height: 80px;
-      margin-bottom: 23px; }
+      line-height: 26px;
+      margin-bottom: 9px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search {
       display: flex;
-      heigth: 160px;
+      heigth: 50px;
       width: 100%; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search input {
-        height: 160px;
-        width: 78%;
-        border-radius: 20px 0 0 20px;
+        height: 50px;
+        width: 100%;
+        border-radius: 6px 0 0 6px;
         border: none;
-        font-size: 2.75em;
-        padding-left: 56px;
+        font-size: 15px;
+        padding-left: 20px;
         font-family: "roboreg"; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search button {
-        height: 160px;
-        width: 22%;
+        height: 50px;
+        width: 65px;
         background: #804c9e;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 6px 6px 0;
         border: none;
         color: #ffffff;
-        font-size: 67px; }
+        font-size: 22px; }
   .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 {
     color: #fff;
     text-align: center;
     position: relative;
-    margin-bottom: 200px; }
+    margin-bottom: 66px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text1 {
-      font-size: 95px;
+      font-size: 30px;
       font-family: "roboreg";
-      margin-bottom: 42px; }
+      margin-bottom: 13px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 {
-      font-size: 156px;
+      font-size: 50px;
       font-family: "averta"; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 sup {
         font-size: 50%;
         position: absolute;
-        bottom: 106px; }
+        bottom: 27px; }
   .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 {
     display: flex;
     justify-content: center; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button {
       background-color: transparent;
-      height: 163px;
-      width: 669px;
-      border: #ffffff 9px solid;
+      height: 56px;
+      width: 215px;
+      border: #ffffff 3px solid;
       border-radius: 82px;
       color: #ffffff;
       text-align: center;
-      font-size: 50px;
+      font-size: 16px;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0 82px; }
+      padding: 0 21px; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button p {
         font-family: "averta"; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
@@ -495,21 +488,22 @@
         opacity: 0.6; }
 
 .home-main-wrapper .home-middle .home-middle-div {
-  height: 1173px;
+  height: 384px;
   width: 100%;
-  font-size: 93px;
-  line-height: 120px;
+  font-size: 30px;
+  line-height: 40px;
   color: #ffffff;
   text-align: center;
   font-family: "averta";
-  padding: 0 37px;
+  padding: 0 15px;
   display: flex;
   align-items: center; }
   .home-main-wrapper .home-middle .home-middle-div .home-mid-span2 {
     font-family: "Open Sans", sans-serif;
     font-size: 105%; }
   .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
-    visibility: hidden; }
+    visibility: hidden;
+    display: none; }
 
 .home-main-wrapper .home-middle .home-div1 {
   background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
@@ -526,83 +520,83 @@
   background-size: cover;
   background-position-x: 50%; }
 
-@media only screen and (min-width: 770px) {
+@media (min-width: 770px) {
   .home-main-wrapper .home-dark-underlay .home-top {
     background: url("./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg") no-repeat;
     background-size: cover;
     background-position-x: 50%;
-    height: 1061px;
+    height: 835px;
     width: 100%;
-    padding: 328px 40px 0 40px;
+    padding: 260px 40px 0 40px;
     display: flex;
     flex-direction: column; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 {
       text-align: center;
-      margin-bottom: 106px;
+      margin-bottom: 90px;
       order: 2; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p {
-        font-size: 37px;
+        font-size: 27px;
         color: #ffffff;
         font-family: "averta";
-        line-height: 30px; }
+        line-height: 15px; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 p span {
           display: none; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search {
         display: flex;
-        heigth: 160px;
+        heigth: 52px;
         width: 100%;
         justify-content: center; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search input {
-          height: 70px;
-          width: 385px;
-          border-radius: 8px 0 0 8px;
+          height: 52px;
+          width: 300px;
+          border-radius: 5px 0 0 5px;
           border: none;
-          font-size: 20px;
-          padding-left: 24px;
+          font-size: 15px;
+          padding-left: 20px;
           font-family: "roboreg"; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div1 .home-location-search button {
-          height: 70px;
-          width: 79px;
+          height: 52px;
+          width: 63px;
           background: #804c9e;
-          border-radius: 0 8px 8px 0;
+          border-radius: 0 5px 5px 0;
           border: none;
           color: #ffffff;
-          font-size: 28px; }
+          font-size: 21px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 {
       color: #fff;
       text-align: center;
       position: relative;
-      margin-bottom: 91px;
+      margin-bottom: 74px;
       order: 1; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text1 {
-        font-size: 51px;
+        font-size: 40px;
         font-family: "roboreg";
-        margin-bottom: 18px; }
+        margin-bottom: 16px; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 {
-        font-size: 89px;
-        line-height: 103px;
+        font-size: 70px;
+        line-height: 80px;
         font-family: "averta"; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div2 .home-div2-text2 sup {
           font-size: 50%;
           position: absolute;
-          bottom: 29px; }
+          bottom: 17px; }
     .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 {
       display: flex;
       justify-content: center;
       order: 3; }
       .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button {
         background-color: transparent;
-        height: 75px;
-        width: 284px;
-        border: #ffffff 4px solid;
+        height: 56px;
+        width: 214px;
+        border: #ffffff 3px solid;
         border-radius: 62px;
         color: #ffffff;
         text-align: center;
-        font-size: 23px;
+        font-size: 17px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 18px; }
+        padding: 10px 18px; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button p {
           font-family: "averta"; }
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
@@ -611,9 +605,9 @@
   .home-main-wrapper .home-middle {
     display: flex; }
     .home-main-wrapper .home-middle .home-middle-div {
-      height: 490px;
+      height: 385px;
       width: 33.333%;
-      font-size: 48px;
+      font-size: 40px;
       color: #ffffff;
       font-family: "averta";
       padding: 0 8px;
@@ -625,14 +619,14 @@
         display: block; }
         .home-main-wrapper .home-middle .home-middle-div .home-mid-span1 .home-mid-span2 {
           font-family: "Open Sans", sans-serif;
-          font-size: 105%; }
+          font-size: 100%; }
       .home-main-wrapper .home-middle .home-middle-div p:first-of-type {
-        line-height: 53px;
+        line-height: 43px;
         margin-bottom: 10px; }
       .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
         visibility: visible;
-        font-size: 21px;
-        line-height: 28px;
+        font-size: 17px;
+        line-height: 23px;
         font-family: "roboreg"; }
     .home-main-wrapper .home-middle .home-div1 {
       background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
@@ -647,7 +641,7 @@
       background-size: cover;
       background-position-x: 50%; }
       .home-main-wrapper .home-middle .home-div3 p:first-of-type {
-        font-size: 48px; } }
+        font-size: 40px; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
@@ -1050,6 +1044,9 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
+header {
+  z-index: 1000; }
+
 .training-wrapper {
   background: #ffffff;
   padding-top: 300px;
@@ -1129,11 +1126,13 @@
           line-height: 99px;
           margin-bottom: 50px;
           color: #231f2b; }
-        .training-wrapper .training-middle .training-videos .training-video-text p:last-of-type {
+        .training-wrapper .training-middle .training-videos .training-video-text .training-txt p {
           font-size: 43px;
           font-family: "roboreg";
           line-height: 72px;
           color: #4a4a4a; }
+        .training-wrapper .training-middle .training-videos .training-video-text .training-learn {
+          display: none; }
   .training-wrapper .training-bottom {
     height: 975px;
     width: 100%;
@@ -1155,6 +1154,85 @@
       font-size: 49px;
       text-align: center;
       text-transform: uppercase; }
+
+@media only screen and (min-width: 770px) {
+  .training-wrapper {
+    padding-top: 282px; }
+    .training-wrapper .training-top {
+      padding: 0 38px 0 38px; }
+      .training-wrapper .training-top .training-top-heading {
+        font-size: 77px;
+        margin-bottom: 29px; }
+      .training-wrapper .training-top .training-top-p {
+        line-height: 36px;
+        margin-bottom: 47px; }
+      .training-wrapper .training-top .training-top-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 126px; }
+        .training-wrapper .training-top .training-top-button button {
+          height: 72px;
+          width: 469px;
+          border: #231f2b 4px solid;
+          border-radius: 39px;
+          font-size: 22px; }
+          .training-wrapper .training-top .training-top-button button span {
+            display: inline; }
+      .training-wrapper .training-top .training-top-a {
+        display: none; }
+    .training-wrapper .training-middle {
+      padding: 0 38px 0 38px;
+      margin-bottom: 119px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .training-wrapper .training-middle .training-videos {
+        margin-bottom: 0px;
+        width: 249px; }
+        .training-wrapper .training-middle .training-videos .training-video i {
+          font-size: 102px;
+          opacity: 0.55;
+          bottom: 23px;
+          right: 23px; }
+        .training-wrapper .training-middle .training-videos .training-video-text {
+          height: 535px;
+          width: 100%;
+          padding: 42px 0px 0px 0px;
+          position: relative; }
+          .training-wrapper .training-middle .training-videos .training-video-text p:first-of-type {
+            font-size: 29px;
+            line-height: 43px;
+            margin-bottom: 27px; }
+          .training-wrapper .training-middle .training-videos .training-video-text .training-txt {
+            padding-left: 29px;
+            padding-right: 29px; }
+            .training-wrapper .training-middle .training-videos .training-video-text .training-txt p {
+              font-size: 18px;
+              line-height: 30px; }
+          .training-wrapper .training-middle .training-videos .training-video-text .training-learn {
+            display: inline;
+            font-family: "averta";
+            font-size: 17px;
+            position: absolute;
+            bottom: 50px;
+            right: 50%;
+            margin-right: -55px; }
+            .training-wrapper .training-middle .training-videos .training-video-text .training-learn a {
+              color: #afbc21;
+              text-decoration: none; }
+    .training-wrapper .training-bottom {
+      height: 325px;
+      padding: 61px 28px 64px 28px; }
+      .training-wrapper .training-bottom p {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 46px; }
+      .training-wrapper .training-bottom button {
+        height: 72px;
+        width: 293px;
+        border: #231f2b 4px solid;
+        border-radius: 39px;
+        font-size: 22px; } }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
