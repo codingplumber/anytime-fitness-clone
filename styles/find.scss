@@ -4,60 +4,60 @@
   .find {
     background: url('./images/join/gym-finder-background.jpg') no-repeat;
     background-size: cover;
-    height: 652px;
+    height: 216px;
     width: 100%;
     background-position-x: 50%;
     color: #ffffff;
     text-align: center;
-    padding: 56px 40px 160px 56px;
+    padding: 19px 12px 0 12px;
     font-family: $robreg;
-    font-size: 55px;
+    font-size: 18px;
     .find-heading {
-      margin-bottom: 29px;
+      margin-bottom: 7px;
       p {
-        line-height: 77px;
+        line-height: 25px;
       }
     }
     .find-search {
       display: flex;
-      heigth: 160px;
+      heigth: 49px;
       width: 100%;
-      margin-bottom: 56px;
+      margin-bottom: 22px;
       input {
-        height: 160px;
-        width: 78%;
-        border-radius: 20px 0 0 20px;
+        height: 49px;
+        width: 80%;
+        border-radius: 8px 0 0 8px;
         border: none;
-        font-size: 44px;
-        padding-left: 56px;
+        font-size: 14px;
+        padding-left: 20px;
         font-family: $robreg;
       }
       button {
-        height: 160px;
-        width: 22%;
+        height: 49px;
+        width: 59px;
         background: #804c9e;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 8px 8px 0;
         border: none;
         color: #ffffff;
-        font-size: 67px;
+        font-size: 18px;
       }
     }
     .find-locations {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding-left: 13%;
+      padding-left: 14%;
       .find-current {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
         i {
-          margin-right: 20px;
+          margin-right: 12px;
         }
       }
       .find-all {
         display: flex;
         i {
-          margin-right: 31px;
+          margin-right: 16px;
           padding-left: 1%;
         }
       }
@@ -66,68 +66,67 @@
 }
 
 
+////////////////////////////////////////////
 
-
-
-@media only screen and (min-width: 770px) {
+@media (min-width: 770px) {
   header {
     top: 0;
     position: fixed;
   }
   .find-wrapper {
-    margin-top: 87px;
+    margin-top: 70px;
     .find {
-      height: 250px;
-      padding: 38px 0px 1px 0px;
-      font-size: 24px;
+      height: 193px;
+      padding: 30px 0 0 0;
+      font-size: 18px;
       .find-heading {
-        margin-bottom: 28px;
+        margin-bottom: 22px;
         display: flex;
         justify-content: center;
         p {
-          margin-right: 3px;
+          margin-right: 4px;
           line-height: 0;
         }
       }
       .find-search {
         display: flex;
-        heigth: 67px;
+        heigth: 51px;
         width: 100%;
         justify-content: center;
-        margin-bottom: 25px;
+        margin-bottom: 21px;
         input {
-          height: 67px;
-          width: 384px;
-          border-radius: 10px 0 0 10px;
-          font-size: 19px;
-          padding-left: 26px;
+          height: 51px;
+          width: 301px;
+          border-radius: 8px 0 0 8px;
+          font-size: 15px;
+          padding-left: 19px;
         }
         button {
-          height: 67px;
-          width: 75px;
-          border-radius: 0 10px 10px 0;
-          font-size: 27px;
+          height: 51px;
+          width: 64px;
+          border-radius: 0 8px 8px 0;
+          font-size: 20px;
         }
       }
       .find-locations {
         align-items: center;
         padding-left: 0;
         .find-current {
-          margin-bottom: 9px;
+          margin-bottom: 7px;
           i {
-            margin-right: 14px;
+            margin-right: 11px;
           }
         }
         .find-all {
-          margin-right: 25px;
+          margin-right: 19px;
           i {
-            margin-right: 20px;
+            margin-right: 15px;
           }
         }
       }
     }
     .find-map {
-      height: 681px;
+      height: 692px;
       width: 100%;
     }
   }

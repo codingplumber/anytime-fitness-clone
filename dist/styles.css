@@ -10,102 +10,102 @@
 .find-wrapper .find {
   background: url("./images/join/gym-finder-background.jpg") no-repeat;
   background-size: cover;
-  height: 652px;
+  height: 216px;
   width: 100%;
   background-position-x: 50%;
   color: #ffffff;
   text-align: center;
-  padding: 56px 40px 160px 56px;
+  padding: 19px 12px 0 12px;
   font-family: "roboreg";
-  font-size: 55px; }
+  font-size: 18px; }
   .find-wrapper .find .find-heading {
-    margin-bottom: 29px; }
+    margin-bottom: 7px; }
     .find-wrapper .find .find-heading p {
-      line-height: 77px; }
+      line-height: 25px; }
   .find-wrapper .find .find-search {
     display: flex;
-    heigth: 160px;
+    heigth: 49px;
     width: 100%;
-    margin-bottom: 56px; }
+    margin-bottom: 22px; }
     .find-wrapper .find .find-search input {
-      height: 160px;
-      width: 78%;
-      border-radius: 20px 0 0 20px;
+      height: 49px;
+      width: 80%;
+      border-radius: 8px 0 0 8px;
       border: none;
-      font-size: 44px;
-      padding-left: 56px;
+      font-size: 14px;
+      padding-left: 20px;
       font-family: "roboreg"; }
     .find-wrapper .find .find-search button {
-      height: 160px;
-      width: 22%;
+      height: 49px;
+      width: 59px;
       background: #804c9e;
-      border-radius: 0 20px 20px 0;
+      border-radius: 0 8px 8px 0;
       border: none;
       color: #ffffff;
-      font-size: 67px; }
+      font-size: 18px; }
   .find-wrapper .find .find-locations {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 13%; }
+    padding-left: 14%; }
     .find-wrapper .find .find-locations .find-current {
       display: flex;
-      margin-bottom: 20px; }
+      margin-bottom: 7px; }
       .find-wrapper .find .find-locations .find-current i {
-        margin-right: 20px; }
+        margin-right: 12px; }
     .find-wrapper .find .find-locations .find-all {
       display: flex; }
       .find-wrapper .find .find-locations .find-all i {
-        margin-right: 31px;
+        margin-right: 16px;
         padding-left: 1%; }
 
-@media only screen and (min-width: 770px) {
+@media (min-width: 770px) {
   header {
     top: 0;
     position: fixed; }
   .find-wrapper {
-    margin-top: 87px; }
+    margin-top: 70px; }
     .find-wrapper .find {
-      height: 250px;
-      padding: 38px 0px 1px 0px;
-      font-size: 24px; }
+      height: 193px;
+      padding: 30px 0 0 0;
+      font-size: 18px; }
       .find-wrapper .find .find-heading {
-        margin-bottom: 28px;
+        margin-bottom: 22px;
         display: flex;
         justify-content: center; }
         .find-wrapper .find .find-heading p {
-          margin-right: 3px;
+          margin-right: 4px;
           line-height: 0; }
       .find-wrapper .find .find-search {
         display: flex;
-        heigth: 67px;
+        heigth: 51px;
         width: 100%;
         justify-content: center;
-        margin-bottom: 25px; }
+        margin-bottom: 21px; }
         .find-wrapper .find .find-search input {
-          height: 67px;
-          width: 384px;
-          border-radius: 10px 0 0 10px;
-          font-size: 19px;
-          padding-left: 26px; }
+          height: 51px;
+          width: 301px;
+          border-radius: 8px 0 0 8px;
+          font-size: 15px;
+          padding-left: 19px; }
         .find-wrapper .find .find-search button {
-          height: 67px;
-          width: 75px;
-          border-radius: 0 10px 10px 0;
-          font-size: 27px; }
+          height: 51px;
+          width: 64px;
+          border-radius: 0 8px 8px 0;
+          font-size: 20px; }
       .find-wrapper .find .find-locations {
         align-items: center;
         padding-left: 0; }
         .find-wrapper .find .find-locations .find-current {
-          margin-bottom: 9px; }
+          margin-bottom: 7px; }
           .find-wrapper .find .find-locations .find-current i {
-            margin-right: 14px; }
+            margin-right: 11px; }
         .find-wrapper .find .find-locations .find-all {
-          margin-right: 25px; }
+          margin-right: 19px; }
           .find-wrapper .find .find-locations .find-all i {
-            margin-right: 20px; }
+            margin-right: 15px; }
     .find-wrapper .find-map {
-      height: 681px;
+      height: 692px;
       width: 100%; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
@@ -1103,8 +1103,8 @@ header {
     margin-bottom: 130px; }
     .training-wrapper .training-middle .training-videos {
       margin-bottom: 30px;
-      -moz-box-shadow: 0 0 30px 15px #e9e9e9;
-      -webkit-box-shadow: 0 0 30px 15px #e9e9e9; }
+      -moz-box-shadow: 0 0 15px 7px #e9e9e9;
+      -webkit-box-shadow: 0 0 15px 7px #e9e9e9; }
       .training-wrapper .training-middle .training-videos .training-video {
         width: 100%;
         height: auto;
@@ -1161,82 +1161,77 @@ header {
 
 @media (min-width: 770px) {
   .training-wrapper {
-    padding-top: 282px; }
+    padding-top: 221px; }
     .training-wrapper .training-top {
-      padding: 0 38px 0 38px; }
+      padding: 0 27px 0 27px; }
       .training-wrapper .training-top .training-top-heading {
-        font-size: 77px;
-        margin-bottom: 29px; }
+        font-size: 60px;
+        margin-bottom: 23px; }
       .training-wrapper .training-top .training-top-p {
-        line-height: 36px;
-        margin-bottom: 47px; }
+        line-height: 28px;
+        margin-bottom: 38px; }
       .training-wrapper .training-top .training-top-button {
         display: flex;
         justify-content: center;
-        margin-bottom: 126px; }
+        margin-bottom: 104px; }
         .training-wrapper .training-top .training-top-button button {
-          height: 72px;
-          width: 469px;
-          border: #231f2b 4px solid;
-          border-radius: 39px;
-          font-size: 22px; }
+          height: 56px;
+          width: 365px;
+          border: #231f2b 3px solid;
+          border-radius: 82px;
+          font-size: 16px; }
           .training-wrapper .training-top .training-top-button button span {
             display: inline; }
       .training-wrapper .training-top .training-top-a {
         display: none; }
     .training-wrapper .training-middle {
-      padding: 0 38px 0 38px;
+      padding: 0 27px 0 27px;
       margin-bottom: 119px;
       display: flex;
       justify-content: space-between;
       width: 100%; }
       .training-wrapper .training-middle .training-videos {
         margin-bottom: 0px;
-        width: 249px; }
+        width: 200px; }
         .training-wrapper .training-middle .training-videos .training-video i {
-          font-size: 102px;
+          font-size: 81px;
           opacity: 0.55;
-          bottom: 23px;
-          right: 23px; }
+          bottom: 18px;
+          right: 18px; }
         .training-wrapper .training-middle .training-videos .training-video-text {
-          height: 535px;
+          height: 427px;
           width: 100%;
-          padding: 42px 0px 0px 0px;
+          padding: 35px 0px 0px 0px;
           position: relative; }
           .training-wrapper .training-middle .training-videos .training-video-text p:first-of-type {
-            font-size: 29px;
-            line-height: 43px;
-            margin-bottom: 27px; }
+            margin-bottom: 22px; }
           .training-wrapper .training-middle .training-videos .training-video-text .training-txt {
-            padding-left: 29px;
-            padding-right: 29px; }
-            .training-wrapper .training-middle .training-videos .training-video-text .training-txt p {
-              font-size: 18px;
-              line-height: 30px; }
+            padding-left: 23px;
+            padding-right: 23px; }
           .training-wrapper .training-middle .training-videos .training-video-text .training-learn {
             display: inline;
             font-family: "averta";
-            font-size: 17px;
+            font-size: 14px;
             position: absolute;
-            bottom: 50px;
-            right: 50%;
+            bottom: 39px;
+            right: 55%;
             margin-right: -55px; }
             .training-wrapper .training-middle .training-videos .training-video-text .training-learn a {
               color: #afbc21;
               text-decoration: none; }
     .training-wrapper .training-bottom {
-      height: 325px;
-      padding: 61px 28px 64px 28px; }
+      height: 258px;
+      padding: 48px 18px 0 18px; }
       .training-wrapper .training-bottom p {
-        font-size: 26px;
-        line-height: 36px;
-        margin-bottom: 46px; }
+        font-size: 21px;
+        line-height: 31px;
+        margin-bottom: 35px; }
       .training-wrapper .training-bottom button {
-        height: 72px;
-        width: 293px;
-        border: #231f2b 4px solid;
-        border-radius: 39px;
-        font-size: 22px; } }
+        height: 56px;
+        width: 235px;
+        border: #231f2b 3px solid;
+        border-radius: 82px;
+        font-size: 16px; } }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
