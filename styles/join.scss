@@ -1,5 +1,22 @@
 @import 'fonts';
 
+#join-hover1:hover {
+  background: #ffffff;
+  color: #804c9e;
+  transition: .4s;
+  cursor: pointer;
+  i {
+    opacity: 1;
+  }
+}
+
+#join-hover2:hover {
+  background: #ffffff;
+  color: #804c9e;
+  transition: .4s;
+  cursor: pointer;
+}
+
 .join-wrapper {
   .join-1 {
     // height: 1406px;

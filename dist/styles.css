@@ -117,6 +117,9 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
+.footer-hover-highlight:hover {
+  color: #ffffff; }
+
 .footer-bottom {
   background: #333;
   padding: 63px 18px; }
@@ -402,7 +405,10 @@
       .header-wrapper2 .header-links-main .header-links {
         text-decoration: none;
         font-size: 14px;
-        color: #ffffff; } }
+        color: #ffffff; }
+      .header-wrapper2 .header-links-main .header-links:hover {
+        color: #231f2b;
+        transition: .4s; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
@@ -412,6 +418,21 @@
 @font-face {
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
+#learn-hover:hover {
+  background: #ffffff;
+  color: #804c9e;
+  transition: .4s; }
+  #learn-hover:hover i {
+    opacity: 1; }
+
+#home-text-blur:hover {
+  opacity: 0.8;
+  transition: .5s; }
+
+.home-scale:hover {
+  transform: scale(1.5, 1.5);
+  transition: .25s; }
 
 .home-main-wrapper .home-dark-underlay .home-top {
   background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
@@ -650,6 +671,20 @@
 @font-face {
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
+
+#join-hover1:hover {
+  background: #ffffff;
+  color: #804c9e;
+  transition: .4s;
+  cursor: pointer; }
+  #join-hover1:hover i {
+    opacity: 1; }
+
+#join-hover2:hover {
+  background: #ffffff;
+  color: #804c9e;
+  transition: .4s;
+  cursor: pointer; }
 
 .join-wrapper .join-1 .join-top {
   background: url("./images/join/crop.jpg") no-repeat;
@@ -1049,6 +1084,18 @@
 header {
   z-index: 1000; }
 
+#train-hover1:hover {
+  background: #231f2b;
+  color: #ffffff;
+  transition: .4s;
+  cursor: pointer; }
+
+#train-hover2:hover {
+  background: #231f2b;
+  color: #ffffff;
+  transition: .4s;
+  cursor: pointer; }
+
 .training-wrapper {
   background: #ffffff;
   padding-top: 104px;
@@ -1119,6 +1166,9 @@ header {
           opacity: 0.5;
           bottom: 18px;
           right: 18px; }
+        .training-wrapper .training-middle .training-videos .training-video i:hover {
+          opacity: 0.8;
+          transition: .4s; }
       .training-wrapper .training-middle .training-videos .training-video-text {
         height: 357px;
         width: 100%;
@@ -1219,6 +1269,9 @@ header {
             .training-wrapper .training-middle .training-videos .training-video-text .training-learn a {
               color: #afbc21;
               text-decoration: none; }
+            .training-wrapper .training-middle .training-videos .training-video-text .training-learn a:hover {
+              color: #231f2b;
+              transition: .4s; }
     .training-wrapper .training-bottom {
       height: 258px;
       padding: 48px 18px 0 18px; }

@@ -3,6 +3,21 @@
 header {
   z-index: 1000;
 }
+
+#train-hover1:hover {
+  background: #231f2b;
+  color: #ffffff;
+  transition: .4s;
+  cursor: pointer;
+}
+
+#train-hover2:hover {
+  background: #231f2b;
+  color: #ffffff;
+  transition: .4s;
+  cursor: pointer;
+}
+
 .training-wrapper {
   background: #ffffff;
   padding-top: 104px;
@@ -86,6 +101,10 @@ header {
           opacity: 0.5;
           bottom: 18px;
           right: 18px;
+        }
+        i:hover {
+          opacity: 0.8;
+          transition: .4s;
         }
       }
       .training-video-text {
@@ -215,6 +234,10 @@ header {
             a {
               color: #afbc21;
               text-decoration: none;
+            }
+            a:hover {
+              color: #231f2b;
+              transition: .4s;
             }
           }
         }
