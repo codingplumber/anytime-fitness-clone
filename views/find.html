@@ -23,7 +23,80 @@
   </section>
 
   <section class="find-map">
-
+  <div id="map">
+    <!-- {{initialize}} -->
+  </div>
   </section>
+
+  <div class='searchstuff1'>
+            <ul id="slide-out" class="side-nav">
+             <li><div class="userView">
+               <dir-logo class='title'></dir-logo>
+             </div></li>
+               <div class="row">
+                 <div class="input-field col s9">
+                   <form ng-submit='newloc(zip1)'>
+                   <input  ng-model='zip1' id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">Zip code</label>
+                   </form>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="input-field col s9">
+                   <form ng-submit='taco(food)'>
+                   <input name='yo' ng-model='food' id="first_name2" type="text" class="validate" required>
+                   <label class="active" for="first_name2">Find</label>
+                   </form>
+                   <div ng-show='!zip1 && food' class='firstzip'>Please Enter Zip First</div>
+                 </div>
+               </div>
+
+             <li><div class="divider"></div></li>
+             <li><a class="subheader">Quick Search</a></li>
+             <li><a class="waves-effect" href="#!" ng-click='taco("Resturants")'>Resturants</a></li>
+             <li><a class="waves-effect" href="#!" ng-click='taco("Shops")'>Shops</a></li>
+             <li><a class="waves-effect" href="#!" ng-click='taco("Hotels")'>Hotels</a></li>
+             <li><a class="waves-effect" ui-sref="find" ng-click='taco("Gyms")'>Gyms</a></li>
+             <li><a class="waves-effect" href="#!" ng-click='taco("Pizza")'>Pizza</a></li>
+           </ul>
+           <a href="#" data-activates="slide-out" class="button-collapse big"><i class="small material-icons ">navigation</i></a>
+           <div class='navstuff'>
+           <p ng-click='modes("day")' class='stuff'><i class="small material-icons">invert_colors</i></p>
+           <p ng-click='modes("night")' class='stuff'><i class="small material-icons">invert_colors_off</i></p>
+           <p class='stuff1'>Map's</p>
+           </div>
+   </div>
+
+<div class='maprap'>
+   <div id="googleMap" class='map'></div>
+</div>
+
+</div>
+
+
+
 </main>
+
+
+
+
+
+
+<!-- <script>
+  function initMap() {
+    var options = {
+      zoom: 13,
+      center: { lat: 42.3601, lng: -71.0589 }
+    }
+  }
+
+  var map = new google.maps.Map(document.getElementById('map'), options);
+</script>
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAGhSp6JMWAFvrvAA_8vXh3HR11TBus5Y&callback=initMap">
+</script> -->
+
+
 <footer></footer>

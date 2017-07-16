@@ -18,7 +18,8 @@ angular.module('app', ['ui.router'])
     })
     .state('find', {
       url: '/find',
-      templateUrl: './views/find.html'
+      templateUrl: './views/find.html',
+      controller: 'findCtrl'
     })
 
 })
