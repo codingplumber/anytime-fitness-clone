@@ -5,11 +5,11 @@
       <p>Find Your Gym & </p>
       <p>Get a Free 7-Day Pass</p>
     </div>
-    <div class="find-search">
-      <input type="text" name="" placeholder="Search by City & State or Zip">
-      <button type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i>
+    <form class="find-search">
+      <input type="text" name="" placeholder="Search by City & State or Zip" ng-model="location">
+      <button type="button" name="button" ng-click="getGeo(location)"><i class="fa fa-search" aria-hidden="true"></i>
       </button>
-    </div>
+    </form>
     <div class="find-locations">
       <div class="find-current">
         <i class="fa fa-crosshairs" aria-hidden="true"></i>
@@ -23,56 +23,10 @@
   </section>
 
   <section class="find-map">
-  <div id="map">
-    <!-- {{initialize}} -->
+  <div class="maps" id="map">
+    {{map}}
   </div>
   </section>
-
-  <div class='searchstuff1'>
-            <ul id="slide-out" class="side-nav">
-             <li><div class="userView">
-               <dir-logo class='title'></dir-logo>
-             </div></li>
-               <div class="row">
-                 <div class="input-field col s9">
-                   <form ng-submit='newloc(zip1)'>
-                   <input  ng-model='zip1' id="first_name2" type="text" class="validate">
-                   <label class="active" for="first_name2">Zip code</label>
-                   </form>
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="input-field col s9">
-                   <form ng-submit='taco(food)'>
-                   <input name='yo' ng-model='food' id="first_name2" type="text" class="validate" required>
-                   <label class="active" for="first_name2">Find</label>
-                   </form>
-                   <div ng-show='!zip1 && food' class='firstzip'>Please Enter Zip First</div>
-                 </div>
-               </div>
-
-             <li><div class="divider"></div></li>
-             <li><a class="subheader">Quick Search</a></li>
-             <li><a class="waves-effect" href="#!" ng-click='taco("Resturants")'>Resturants</a></li>
-             <li><a class="waves-effect" href="#!" ng-click='taco("Shops")'>Shops</a></li>
-             <li><a class="waves-effect" href="#!" ng-click='taco("Hotels")'>Hotels</a></li>
-             <li><a class="waves-effect" ui-sref="find" ng-click='taco("Gyms")'>Gyms</a></li>
-             <li><a class="waves-effect" href="#!" ng-click='taco("Pizza")'>Pizza</a></li>
-           </ul>
-           <a href="#" data-activates="slide-out" class="button-collapse big"><i class="small material-icons ">navigation</i></a>
-           <div class='navstuff'>
-           <p ng-click='modes("day")' class='stuff'><i class="small material-icons">invert_colors</i></p>
-           <p ng-click='modes("night")' class='stuff'><i class="small material-icons">invert_colors_off</i></p>
-           <p class='stuff1'>Map's</p>
-           </div>
-   </div>
-
-<div class='maprap'>
-   <div id="googleMap" class='map'></div>
-</div>
-
-</div>
-
 
 
 </main>
