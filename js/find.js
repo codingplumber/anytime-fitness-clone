@@ -41,6 +41,7 @@ angular.module('app')
       .then(response => {
         lat = response.lat;
         lng = response.lng;
+        console.log(lat, lng);
 
         $scope.initMap(lat, lng);
       })
@@ -49,7 +50,17 @@ angular.module('app')
     $scope.location = '';
   }
 
+  /////////////////////Places//////////////////////////////////////////////
 
+  $scope.getPlaces = () => {
+    mainSrvc
+      .getPlaces()
+      .then(response => {
+        console.log('ctrl', response);
+      })
+  }
+
+  $scope.getPlaces();
 
   /////////////////////////////////////////////////////////////////////////
 
