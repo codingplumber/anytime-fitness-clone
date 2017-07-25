@@ -244,25 +244,4 @@ angular.module('app').service('mainSrvc', function ($http) {
   //
   // }
 });
-'use strict';
-
-angular.module('app').directive('hoverIncrease', function () {
-
-  return {
-    restrict: 'A',
-    link: function link(scope, element, attribute) {
-      $('div.home-middle-div').hover(function () {
-        element.css("cursor", "pointer");
-        element.toggle(function () {
-          element.css({
-            'height': '110%',
-            'width': '110%'
-          });
-        });
-
-        console.log('here');
-      });
-    }
-  };
-});
 //# sourceMappingURL=bundle.js.map

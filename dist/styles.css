@@ -511,38 +511,6 @@
         font-size: 2em;
         opacity: 0.6; }
 
-.home-main-wrapper .home-middle .home-middle-div {
-  height: 384px;
-  width: 100%;
-  font-size: 30px;
-  line-height: 40px;
-  color: #ffffff;
-  text-align: center;
-  font-family: "averta";
-  padding: 0 15px;
-  display: flex;
-  align-items: center; }
-  .home-main-wrapper .home-middle .home-middle-div .home-mid-span2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 105%; }
-  .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
-    display: none; }
-
-.home-main-wrapper .home-middle .home-div1 {
-  background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
-.home-main-wrapper .home-middle .home-div2 {
-  background: url("./images/home/App.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
-.home-main-wrapper .home-middle .home-div3 {
-  background: url("./images/home/Rugged3.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: 50%; }
-
 @media (min-width: 770px) {
   .home-main-wrapper .home-dark-underlay .home-top {
     background: url("./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg") no-repeat;
@@ -625,55 +593,58 @@
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
           font-size: 2em;
           opacity: 0.6; }
-  .home-main-wrapper .home-child::before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(52, 73, 94, 0.75); }
-  .home-main-wrapper .home-parent:hover .home-child:before,
-  .home-main-wrapper .home-parent:focus .home-child:before {
-    display: block; }
   .home-main-wrapper .home-middle {
     display: flex; }
-    .home-main-wrapper .home-middle .home-middle-div {
-      height: 385px;
+    .home-main-wrapper .home-middle .home-parent {
+      height: 384px;
       width: 33.333%;
-      font-size: 40px;
-      color: #ffffff;
-      font-family: "averta";
-      padding: 0 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .home-main-wrapper .home-middle .home-middle-div .home-mid-span1 {
-        display: block; }
-        .home-main-wrapper .home-middle .home-middle-div .home-mid-span1 .home-mid-span2 {
-          font-family: "Open Sans", sans-serif;
-          font-size: 100%; }
-      .home-main-wrapper .home-middle .home-middle-div p:first-of-type {
-        line-height: 43px;
-        margin-bottom: 10px; }
-      .home-main-wrapper .home-middle .home-middle-div .home-middle-hide {
-        display: block;
-        font-size: 17px;
-        line-height: 23px;
-        font-family: "roboreg"; }
-    .home-main-wrapper .home-middle .home-div1 {
-      background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
-      background-size: cover;
-      background-position-x: 50%; }
-    .home-main-wrapper .home-middle .home-div2 {
-      background: url("./images/home/App.jpg") no-repeat;
-      background-size: cover;
-      background-position-x: 50%; }
-    .home-main-wrapper .home-middle .home-div3 {
-      background: url("./images/home/Rugged3.jpg") no-repeat;
-      background-size: cover;
-      background-position-x: 50%; }
-      .home-main-wrapper .home-middle .home-div3 p:first-of-type {
-        font-size: 40px; } }
+      overflow: hidden;
+      display: inline-block; }
+      .home-main-wrapper .home-middle .home-parent .home-child {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: all 0.2s linear;
+        overflow: hidden; }
+        .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay {
+          background: rgba(0, 0, 0, 0.3);
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          z-index: 10;
+          font-size: 40px;
+          color: #ffffff;
+          font-family: "averta";
+          padding: 0 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay p:first-of-type {
+            line-height: 43px;
+            margin-bottom: 10px; }
+          .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay .home-middle-hide {
+            display: block;
+            font-size: 17px;
+            line-height: 23px;
+            font-family: "roboreg"; }
+      .home-main-wrapper .home-middle .home-parent .home-child1 {
+        background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
+        background-size: cover;
+        background-position-x: 50%; }
+      .home-main-wrapper .home-middle .home-parent .home-child2 {
+        background: url("./images/home/App.jpg") no-repeat;
+        background-size: cover;
+        background-position-x: 50%; }
+      .home-main-wrapper .home-middle .home-parent .home-child3 {
+        background: url("./images/home/Rugged3.jpg") no-repeat;
+        background-size: cover;
+        background-position-x: 50%; }
+  .home-main-wrapper .home-child-overlay:hover {
+    transform: scale(1, 1); }
+  .home-main-wrapper .home-child:hover {
+    transform: scale(1.05, 1.05); } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
