@@ -1,10 +1,5 @@
 @import 'fonts';
 
-
-.footer-hover-highlight:hover {
-  color: #ffffff;
-}
-
 .footer-bottom {
   background: #333;
   padding: 63px 18px;
@@ -116,6 +111,12 @@
             font-size: 14px;
             margin-bottom: 11px;
             line-height: 19px;
+            transition: all 0.2s;
+          }
+        }
+        .footer-bottom-subheading {
+          p:hover {
+            color: #ffffff;
           }
         }
       }
@@ -137,33 +138,20 @@
           margin-bottom: 16px;
           margin-left: 16px;
           margin-right: 0;
+          transition: all 0.2s;
           a {
             text-decoration: none;
-            // i {
-            //   color: #888;
-            // }
-            // .i1 {
-            //   font-size: 26px;
-            // }
-            // .i2 {
-            //   font-size: 23px;
-            // }
-            // .i3 {
-            //   font-size: 19px;
-            //   // order: 3;
-            // }
-            // .i4 {
-            //   font-size: 24px;
-            // }
-            // .i5 {
-            //   font-size: 23px;
-            // }
-            // .i6 {
-            //   font-size: 24px;
-            // }
-            // .i7 {
-            //   font-size: 27px;
-            // }
+            i {
+              transition: all 0.2s;
+            }
+          }
+        }
+        .footer-social-circle:hover {
+          border: #ffffff 2px solid;
+          a {
+            i {
+              color: #ffffff;
+            }
           }
         }
       }
@@ -187,4 +175,5 @@
       }
     }
   }
+
 }
