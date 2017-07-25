@@ -1,8 +1,8 @@
 angular.module('app')
-.controller('findCtrl', function($scope, mainSrvc) {
+.controller('findCtrl', function($scope, mainSrvc, $http) {
 
-  var lat,
-      lng;
+  // var lat,
+  //     lng;
 
   ///////////////////////////Maps////////////////////////////////////////////
   $scope.initMap = (lat, lng) => {
@@ -52,13 +52,24 @@ angular.module('app')
 
   /////////////////////Places//////////////////////////////////////////////
 
+  // $scope.getPlaces = () => {
+  //   mainSrvc
+  //     .getPlaces()
+  //     .then(response => {
+  //       console.log('ctrl', response);
+  //     })
+  // }
+
+  //////////// practice hitting api ///////////////////////////
   $scope.getPlaces = () => {
-    mainSrvc
-      .getPlaces()
-      .then(response => {
-        console.log('ctrl', response);
-      })
-  }
+    return $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew')
+    .then(response => {
+      console.log('srvc', response)
+    })
+    .catch(error => {
+      console.log('places error:', error);
+    })
+  };
 
   $scope.getPlaces();
 

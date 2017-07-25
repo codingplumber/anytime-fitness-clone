@@ -625,6 +625,15 @@
         .home-main-wrapper .home-dark-underlay .home-top .home-top-div3 button i {
           font-size: 2em;
           opacity: 0.6; }
+  .home-main-wrapper .home-child::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(52, 73, 94, 0.75); }
+  .home-main-wrapper .home-parent:hover .home-child:before,
+  .home-main-wrapper .home-parent:focus .home-child:before {
+    display: block; }
   .home-main-wrapper .home-middle {
     display: flex; }
     .home-main-wrapper .home-middle .home-middle-div {

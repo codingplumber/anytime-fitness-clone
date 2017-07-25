@@ -4,6 +4,13 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 
   $urlRouterProvider.otherwise('/');
 
+  // $sceDelegateProvider.resourceUrlWhitelist([
+  //   // Allow same origin resource loads.
+  //   'self',
+  //   // Allow loading from our assets domain. **.
+  //   'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
+  // ]);
+
   $stateProvider.state('home', {
     url: '/',
     templateUrl: './views/home.html'
@@ -21,9 +28,10 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 });
 'use strict';
 
-angular.module('app').controller('findCtrl', function ($scope, mainSrvc) {
+angular.module('app').controller('findCtrl', function ($scope, mainSrvc, $http) {
 
-  var lat, lng;
+  // var lat,
+  //     lng;
 
   ///////////////////////////Maps////////////////////////////////////////////
   $scope.initMap = function (lat, lng) {
@@ -70,9 +78,20 @@ angular.module('app').controller('findCtrl', function ($scope, mainSrvc) {
 
   /////////////////////Places//////////////////////////////////////////////
 
+  // $scope.getPlaces = () => {
+  //   mainSrvc
+  //     .getPlaces()
+  //     .then(response => {
+  //       console.log('ctrl', response);
+  //     })
+  // }
+
+  //////////// practice hitting api ///////////////////////////
   $scope.getPlaces = function () {
-    mainSrvc.getPlaces().then(function (response) {
-      console.log('ctrl', response);
+    return $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew').then(function (response) {
+      console.log('srvc', response);
+    }).catch(function (error) {
+      console.log('places error:', error);
     });
   };
 
@@ -191,31 +210,59 @@ angular.module('app').service('mainSrvc', function ($http) {
   // 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
   // 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 
-  this.getPlaces = function () {
-    // var location = "34.9229483,-85.3601307";
-    // var keyword = "anytime fitness"
-    return $http({
-      method: 'GET',
-      // 'JSONP'
-      url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
-    })
-    // return $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew')
-    // // ,{
-    // //   params: {
-    // //     location:location,
-    // //     radius: 500,
-    // //     // ^ 50000 max...
-    // //     keyword: keyword,
-    // //     key: 'AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
-    // //   }
-    // // })
-    .then(function (response) {
-      console.log('srvc', response);
-    }).catch(function (error) {
-      console.log('places error:', error);
-    });
-  };
+  //   // var location = "34.9229483,-85.3601307";
+  //   // var keyword = "anytime fitness"
+  //   return $http({
+  //     method: 'GET',
+  //     // 'JSONP'
+  //     url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
+  //   })
+
+  // this.getPlaces = () => {
+  //   return $json.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew')
+  //   .then(response => {
+  //     console.log('srvc', response)
+  //   })
+  //   .catch(error => {
+  //     console.log('places error:', error);
+  //   })
+  // };
+
+  // ,{
+  // //   params: {
+  // //     location:location,
+  // //     radius: 500,
+  // //     // ^ 50000 max...
+  // //     keyword: keyword,
+  // //     key: 'AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
+  // //   }
 
   // XMLHttpRequest cannot load https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.92…50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://127.0.0.1:8080' is therefore not allowed access.
+
+  //////////////////////////////Whitepages//////////////////////////////////
+  // this.getPlaces() => {
+  //
+  // }
+});
+'use strict';
+
+angular.module('app').directive('hoverIncrease', function () {
+
+  return {
+    restrict: 'A',
+    link: function link(scope, element, attribute) {
+      $('div.home-middle-div').hover(function () {
+        element.css("cursor", "pointer");
+        element.toggle(function () {
+          element.css({
+            'height': '110%',
+            'width': '110%'
+          });
+        });
+
+        console.log('here');
+      });
+    }
+  };
 });
 //# sourceMappingURL=bundle.js.map
