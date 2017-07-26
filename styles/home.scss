@@ -1,5 +1,12 @@
 @import 'fonts';
 
+.home-shadow {
+  position: relative;
+  -moz-box-shadow:    inset 0 30px 15px -7px #1e1e1e;
+  -webkit-box-shadow: inset 0 30px 15px -7px #1e1e1e;
+  box-shadow:         inset 0 30px 15px -7px #1e1e1e;
+}
+
 #learn-hover:hover {
   background: #ffffff;
   color: #804c9e;
@@ -20,28 +27,29 @@
 }
 
 .home-main-wrapper {
-  // background: #333;
-  // z-index: 5;
   // -moz-box-shadow:    inset 0 30px 15px -7px #1e1e1e;
   // -webkit-box-shadow: inset 0 30px 15px -7px #1e1e1e;
   // box-shadow:         inset 0 30px 15px -7px #1e1e1e;
-  .home-dark-underlay {
-    // background: #333;
-    // width: 100%;
-    // height: 2020px;
-    .home-top {
-      background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
-      background-size: cover;
-      background-position-x: 50%;
-      // opacity: 0.75;
-      height: 660px;
+  .home-top {
+    background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.98;
+    height: 660px;
+    width: 100%;
+    position: relative;
+    .home-top-overlay {
+      height: 100%;
       width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
       padding: 95px 15px 0 15px;
       .home-top-div1 {
         text-align: center;
         margin-bottom: 45px;
         p {
-          // filter: brightness(150%);
           font-size: 20px;
           color: #ffffff;
           font-family: $av;
@@ -120,328 +128,156 @@
     }
   }
 
-  //////////////////////////fix
-  // .home-middle {
-  //   .home-parent {
-  //     height: 384px;
-  //     width: 100%;
-  //     .home-child {
-  //       width: 100%;
-  //       height: 100%;
-  //       background: black;
-  //       background-image: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
-  //       background-size: cover;
-  //       background-position-x: 50%;
-  //       transition: all .5s;
-  //     }
-  //   }
-  // }
-  //
-  // .home-parent:hover .home-child,
-  // .home-parent:focus .home-child {
-  //   transform: scale(1.2);
-  // }
-  ////////////////////////////fix
-
-  // .home-middle {
-  //   .home-middle-div {
-  //     // filter: brightness(77%);
-  //     height: 384px;
-  //     width: 100%;
-  //     font-size: 30px;
-  //     line-height: 40px;
-  //     color: #ffffff;
-  //     text-align: center;
-  //     font-family: $av;
-  //     padding: 0 15px;
-  //     display: flex;
-  //     align-items: center;
-  //     .home-mid-span2 {
-  //       font-family: $sans;
-  //       font-size: 105%;
-  //     }
-  //     .home-middle-hide {
-  //       display: none;
-  //     }
-  //   }
-  //   .home-div1 {
-  //     background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
-  //     background-size: cover;
-  //     background-position-x: 50%;
-  //   }
-  //   .home-div2 {
-  //     background: url('./images/home/App.jpg') no-repeat;
-  //     background-size: cover;
-  //     background-position-x: 50%;
-  //   }
-  //   .home-div3 {
-  //     background: url('./images/home/Rugged3.jpg') no-repeat;
-  //     background-size: cover;
-  //     background-position-x: 50%;
-  //   }
-  // }
-}
-
-
-
-
-
-
-@media (min-width: 770px) {
-  .home-main-wrapper {
-    .home-dark-underlay {
-      // background: rgba(0, 0, 0, 0.3);
-      // height: 100%;
-      // width: 100%;
-      // position: absolute;
-      background: url('./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg') no-repeat;
-      background-size: cover;
-      background-position-x: 50%;
-      // opacity: 0.75;
-      height: 835px;
+  .home-middle {
+    .home-parent {
+      height: 384px;
       width: 100%;
-      padding: 260px 40px 0 40px;
-      position: initial;
-      .home-top {
-        // background: url('./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg') no-repeat;
-        // background-size: cover;
-        // background-position-x: 50%;
-        // // opacity: 0.75;
-        // height: 835px;
-        // width: 100%;
-        // padding: 260px 40px 0 40px;
-        display: flex;
-        flex-direction: column;
-
-        background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .home-child {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: all 0.2s linear;
+        overflow: hidden;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 5;
+      }
+      .home-child:hover {
+        transform: scale(1.05, 1.05);
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .home-child-overlay {
+        background: black;
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 0;
-        left: 0;
+      }
+      .home-child-text {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: $av;
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 12px 4% 0 4%;
+        width: 100%;
+        p:first-of-type {
+          line-height: 43px;
+          margin-bottom: 10px;
+        }
+        .home-middle-hide {
+          display: none;
+        }
+        .home-mid-span2 {
+          font-family: $sans;
+          font-size: 105%;
+        }
+      }
+      .home-child1 {
+        background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+      }
+      .home-child2 {
+        background: url('./images/home/App.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+      }
+      .home-child3 {
+        background: url('./images/home/Rugged3.jpg') no-repeat;
+        background-size: cover;
+        background-position-x: 50%;
+      }
+    }
+  }
+}
+
+////////////////////// 770 ////////////////////
+
+@media (min-width: 770px) {
+  .home-main-wrapper {
+    .home-top {
+      background: url('./images/home/AMKT16843-WEBSITE-PHOTO-OPTION1d-1.jpg') no-repeat;
+      background-size: cover;
+      background-position-x: 50%;
+      height: 835px;
+      opacity: 0.9;
+      position: initial;
+      .home-top-overlay {
+        display: flex;
+        flex-direction: column;
+        height: 101%;
+        padding: 260px 0px 0px 0;
         .home-top-div1 {
-          text-align: center;
           margin-bottom: 90px;
           order: 2;
           p {
-            // filter: brightness(150%);
             font-size: 27px;
-            color: #ffffff;
-            font-family: $av;
-            line-height: 15px;
+            line-height: 60px;
             span {
               display: none;
             }
           }
           .home-location-search {
-            display: flex;
             heigth: 52px;
-            width: 100%;
             justify-content: center;
             input {
               height: 52px;
               width: 300px;
               border-radius: 5px 0 0 5px;
-              border: none;
-              font-size: 15px;
-              padding-left: 20px;
-              font-family: $robreg;
             }
             button {
               height: 52px;
               width: 63px;
               background: #804c9e;
               border-radius: 0 5px 5px 0;
-              border: none;
-              color: #ffffff;
               font-size: 21px;
             }
           }
         }
         .home-top-div2 {
-          color: #fff;
-          text-align: center;
-          position: relative;
-          margin-bottom: 74px;
+          margin-bottom: 51px;
           order: 1;
           .home-div2-text1 {
             font-size: 40px;
-            font-family: $robreg;
             margin-bottom: 16px;
           }
           .home-div2-text2 {
             font-size: 70px;
             line-height: 80px;
-            font-family: $av;
             sup {
-              font-size: 50%;
-              position: absolute;
               bottom: 17px;
             }
           }
         }
         .home-top-div3 {
-          display: flex;
-          justify-content: center;
           order: 3;
           button {
-            background-color: transparent;
-            height: 56px;
             width: 214px;
-            border: #ffffff 3px solid;
             border-radius: 62px;
-            color: #ffffff;
-            text-align: center;
             font-size: 17px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
             padding: 10px 18px;
-            p {
-              font-family: $av;
-            }
-            i {
-              font-size: 2em;
-              opacity: 0.6;
-            }
           }
         }
       }
     }
 
-
-
     .home-middle {
       display: flex;
-      // .home-parent {
-      //   height: 384px;
-      //   width: 33.333%;
-      //   overflow: hidden;
-      //   display: inline-block;
-      //   .home-child {
-      //     // position: relative;
-      //     width: 100%;
-      //     height: 100%;
-      //     background-size: cover;
-      //     transform: scale(1, 1);
-      //     transition: all 0.2s linear;
-      //     overflow: hidden;
-      //     .home-child-overlay {
-      //       background: rgba(0, 0, 0, 0.3);
-      //       height: 100%;
-      //       width: 100%;
-      //       position: absolute;
-      //       z-index: 10;
-      //       font-size: 40px;
-      //       color: #ffffff;
-      //       font-family: $av;
-      //       padding: 0 8px;
-      //       // display: flex;
-      //       // flex-direction: column;
-      //       // align-items: center;
-      //       // justify-content: center;
-      //       p:first-of-type {
-      //         line-height: 43px;
-      //         margin-bottom: 10px;
-      //       }
-      //       .home-middle-hide {
-      //         display: block;
-      //         font-size: 17px;
-      //         line-height: 23px;
-      //         font-family: $robreg;
-      //       }
-      //     }
-      //   }
-      //   .home-child1 {
-      //     background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
-      //     background-size: cover;
-      //     background-position-x: 50%;
-      //   }
-      //   .home-child1:hover {
-      //     transform: scale(1.05, 1.05);
-      //   }
-      //   .home-child2 {
-      //     background: url('./images/home/App.jpg') no-repeat;
-      //     background-size: cover;
-      //     background-position-x: 50%;
-      //   }
-      //   .home-child3 {
-      //     background: url('./images/home/Rugged3.jpg') no-repeat;
-      //     background-size: cover;
-      //     background-position-x: 50%;
-      //   }
-      // }
-
-
-
       .home-parent {
-        height: 384px;
         width: 33.333%;
-        overflow: hidden;
-        display: inline-block;
-
-
-        // new
-        position: relative;
-
-
-        .home-child {
-          // position: relative;
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          // transform: scale(1, 1);
-          transition: all 0.2s linear;
-          overflow: hidden;
-          opacity: 0.6;
-
-
-          // new
-          position: absolute;
-          z-index: 5;
-          // padding: 38% 2%;
-        }
-        .home-child:hover {
-          transform: scale(1.05, 1.05);
-          opacity: 0.9;
-          cursor: pointer;
-        }
-
-        .home-child-overlay {
-          background: black;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          // z-index: 10;
-
-
-          // display: flex;
-          // flex-direction: column;
-          // align-items: center;
-          // justify-content: center;
-
-          // new
-        }
-
-
-
         .home-child-text {
           font-size: 40px;
-          color: #ffffff;
-          font-family: $av;
-          z-index: 10;
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          // padding: 121px 8px;
-          // padding: 38% 2%;
           padding: 0 2%;
           top: 32%;
-          p:first-of-type {
-            line-height: 43px;
-            margin-bottom: 10px;
-          }
           .home-middle-hide {
             display: block;
             font-size: 17px;
@@ -449,152 +285,7 @@
             font-family: $robreg;
           }
         }
-
-        .home-child1 {
-          background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
-          background-size: cover;
-          background-position-x: 50%;
-        }
-        .home-child1:hover {
-          transform: scale(1.05, 1.05);
-        }
-        .home-child2 {
-          background: url('./images/home/App.jpg') no-repeat;
-          background-size: cover;
-          background-position-x: 50%;
-        }
-        .home-child3 {
-          background: url('./images/home/Rugged3.jpg') no-repeat;
-          background-size: cover;
-          background-position-x: 50%;
-        }
       }
-
-
-
-
-      // .home-parent {
-      //   height: 384px;
-      //   width: 33.333%;
-      //   overflow: hidden;
-      //   display: inline-block;
-      //   img {
-      //     position: relative;
-      //     // width: 100%;
-      //     width: auto;
-      //     height: 100%;
-      //     overflow: hidden;
-      //     position: relative;
-      //     display: inline-block;
-      //     vertical-align: top;
-      //     border: 5px solid #fff;
-      //     box-shadow: 0 0 5px #ddd;
-      //     margin: 1em;
-      //     img:hover {
-      //       transition: all 0.5s linear;
-      //       transform: scale3d(1.2, 1.2, 1);
-      //     }
-      //     .home-child-overlay {
-      //       background: rgba(0, 0, 0, 0.3);
-      //       height: 100%;
-      //       width: 100%;
-      //       position: absolute;
-      //       z-index: 10;
-      //       font-size: 40px;
-      //       color: #ffffff;
-      //       font-family: $av;
-      //       padding: 0 8px;
-      //       p:first-of-type {
-      //         line-height: 43px;
-      //         margin-bottom: 10px;
-      //       }
-      //       .home-middle-hide {
-      //         display: block;
-      //         font-size: 17px;
-      //         line-height: 23px;
-      //         font-family: $robreg;
-      //       }
-      //     }
-      //   }
-      // }
-
-
-
-
-
-
-
     }
-
-    // .home-child:hover {
-    //   transform: scale(1.05, 1.05);
-    //   opacity: 1;
-    //   cursor: pointer;
-    // }
-
-    // .home-child-overlay:hover {
-    //   // background-color: rgba(255,255,255,1);
-    //   opacity: 0;
-    // }
-
-
-
-
-
-
-
-
-
-    // .home-middle {
-    //   display: flex;
-    //   .home-middle-div {
-    //     height: 385px;
-    //     width: 33.333%;
-    //     // filter: brightness(77%);
-    //     font-size: 40px;
-    //     color: #ffffff;
-    //     font-family: $av;
-    //     padding: 0 8px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: center;
-    //     .home-mid-span1 {
-    //       display: block;
-    //       .home-mid-span2 {
-    //         font-family: $sans;
-    //         font-size: 100%;
-    //       }
-    //     }
-    //     p:first-of-type {
-    //       line-height: 43px;
-    //       margin-bottom: 10px;
-    //     }
-    //     .home-middle-hide {
-    //       display: block;
-    //       font-size: 17px;
-    //       line-height: 23px;
-    //       font-family: $robreg;
-    //     }
-    //   }
-    //   .home-div1 {
-    //     background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
-    //     background-size: cover;
-    //     background-position-x: 50%;
-    //   }
-    //   .home-div2 {
-    //     background: url('./images/home/App.jpg') no-repeat;
-    //     background-size: cover;
-    //     background-position-x: 50%;
-    //   }
-    //   .home-div3 {
-    //     background: url('./images/home/Rugged3.jpg') no-repeat;
-    //     background-size: cover;
-    //     background-position-x: 50%;
-    //     p:first-of-type {
-    //       font-size: 40px;
-    //     }
-    //   }
-    // }
   }
 }
