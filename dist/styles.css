@@ -614,36 +614,51 @@
       height: 384px;
       width: 33.333%;
       overflow: hidden;
-      display: inline-block; }
+      display: inline-block;
+      position: relative; }
       .home-main-wrapper .home-middle .home-parent .home-child {
-        position: relative;
         width: 100%;
         height: 100%;
         background-size: cover;
         transition: all 0.2s linear;
-        overflow: hidden; }
-        .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay {
-          background: rgba(0, 0, 0, 0.3);
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          z-index: 10;
-          font-size: 40px;
-          color: #ffffff;
-          font-family: "averta";
-          padding: 0 8px; }
-          .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay p:first-of-type {
-            line-height: 43px;
-            margin-bottom: 10px; }
-          .home-main-wrapper .home-middle .home-parent .home-child .home-child-overlay .home-middle-hide {
-            display: block;
-            font-size: 17px;
-            line-height: 23px;
-            font-family: "roboreg"; }
+        overflow: hidden;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 5; }
+      .home-main-wrapper .home-middle .home-parent .home-child:hover {
+        transform: scale(1.05, 1.05);
+        opacity: 0.9;
+        cursor: pointer; }
+      .home-main-wrapper .home-middle .home-parent .home-child-overlay {
+        background: black;
+        height: 100%;
+        width: 100%;
+        position: absolute; }
+      .home-main-wrapper .home-middle .home-parent .home-child-text {
+        font-size: 40px;
+        color: #ffffff;
+        font-family: "averta";
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2%;
+        top: 32%; }
+        .home-main-wrapper .home-middle .home-parent .home-child-text p:first-of-type {
+          line-height: 43px;
+          margin-bottom: 10px; }
+        .home-main-wrapper .home-middle .home-parent .home-child-text .home-middle-hide {
+          display: block;
+          font-size: 17px;
+          line-height: 23px;
+          font-family: "roboreg"; }
       .home-main-wrapper .home-middle .home-parent .home-child1 {
         background: url("./images/home/anytime-fitness-gym.jpg") no-repeat;
         background-size: cover;
         background-position-x: 50%; }
+      .home-main-wrapper .home-middle .home-parent .home-child1:hover {
+        transform: scale(1.05, 1.05); }
       .home-main-wrapper .home-middle .home-parent .home-child2 {
         background: url("./images/home/App.jpg") no-repeat;
         background-size: cover;
@@ -651,11 +666,7 @@
       .home-main-wrapper .home-middle .home-parent .home-child3 {
         background: url("./images/home/Rugged3.jpg") no-repeat;
         background-size: cover;
-        background-position-x: 50%; }
-  .home-main-wrapper .home-child:hover {
-    transform: scale(1.05, 1.05); }
-  .home-main-wrapper .home-child-overlay:hover {
-    opacity: 0; } }
+        background-position-x: 50%; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {

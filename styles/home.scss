@@ -313,60 +313,150 @@
 
     .home-middle {
       display: flex;
+      // .home-parent {
+      //   height: 384px;
+      //   width: 33.333%;
+      //   overflow: hidden;
+      //   display: inline-block;
+      //   .home-child {
+      //     // position: relative;
+      //     width: 100%;
+      //     height: 100%;
+      //     background-size: cover;
+      //     transform: scale(1, 1);
+      //     transition: all 0.2s linear;
+      //     overflow: hidden;
+      //     .home-child-overlay {
+      //       background: rgba(0, 0, 0, 0.3);
+      //       height: 100%;
+      //       width: 100%;
+      //       position: absolute;
+      //       z-index: 10;
+      //       font-size: 40px;
+      //       color: #ffffff;
+      //       font-family: $av;
+      //       padding: 0 8px;
+      //       // display: flex;
+      //       // flex-direction: column;
+      //       // align-items: center;
+      //       // justify-content: center;
+      //       p:first-of-type {
+      //         line-height: 43px;
+      //         margin-bottom: 10px;
+      //       }
+      //       .home-middle-hide {
+      //         display: block;
+      //         font-size: 17px;
+      //         line-height: 23px;
+      //         font-family: $robreg;
+      //       }
+      //     }
+      //   }
+      //   .home-child1 {
+      //     background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
+      //     background-size: cover;
+      //     background-position-x: 50%;
+      //   }
+      //   .home-child1:hover {
+      //     transform: scale(1.05, 1.05);
+      //   }
+      //   .home-child2 {
+      //     background: url('./images/home/App.jpg') no-repeat;
+      //     background-size: cover;
+      //     background-position-x: 50%;
+      //   }
+      //   .home-child3 {
+      //     background: url('./images/home/Rugged3.jpg') no-repeat;
+      //     background-size: cover;
+      //     background-position-x: 50%;
+      //   }
+      // }
+
+
+
       .home-parent {
         height: 384px;
         width: 33.333%;
-
         overflow: hidden;
-        // position: relative;
         display: inline-block;
-        // vertical-align: top;
-        // border: 5px solid #fff;
-        // box-shadow: 0 0 5px #ddd;
-        // margin: 1em;
+
+
+        // new
+        position: relative;
+
+
         .home-child {
-          position: relative;
+          // position: relative;
           width: 100%;
           height: 100%;
-          // background: black;
           background-size: cover;
-          // background-position-x: 50%;
+          // transform: scale(1, 1);
           transition: all 0.2s linear;
           overflow: hidden;
+          opacity: 0.6;
 
-          // background-size: cover;
-          // background-position-x: 50%;
-          .home-child-overlay {
-            background: rgba(0, 0, 0, 0.3);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: 10;
 
-            font-size: 40px;
-            color: #ffffff;
-            font-family: $av;
-            padding: 0 8px;
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
-            // justify-content: center;
-            p:first-of-type {
-              line-height: 43px;
-              margin-bottom: 10px;
-            }
-            .home-middle-hide {
-              display: block;
-              font-size: 17px;
-              line-height: 23px;
-              font-family: $robreg;
-            }
+          // new
+          position: absolute;
+          z-index: 5;
+          // padding: 38% 2%;
+        }
+        .home-child:hover {
+          transform: scale(1.05, 1.05);
+          opacity: 0.9;
+          cursor: pointer;
+        }
+
+        .home-child-overlay {
+          background: black;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          // z-index: 10;
+
+
+          // display: flex;
+          // flex-direction: column;
+          // align-items: center;
+          // justify-content: center;
+
+          // new
+        }
+
+
+
+        .home-child-text {
+          font-size: 40px;
+          color: #ffffff;
+          font-family: $av;
+          z-index: 10;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          // padding: 121px 8px;
+          // padding: 38% 2%;
+          padding: 0 2%;
+          top: 32%;
+          p:first-of-type {
+            line-height: 43px;
+            margin-bottom: 10px;
+          }
+          .home-middle-hide {
+            display: block;
+            font-size: 17px;
+            line-height: 23px;
+            font-family: $robreg;
           }
         }
+
         .home-child1 {
           background: url('./images/home/anytime-fitness-gym.jpg') no-repeat;
           background-size: cover;
           background-position-x: 50%;
+        }
+        .home-child1:hover {
+          transform: scale(1.05, 1.05);
         }
         .home-child2 {
           background: url('./images/home/App.jpg') no-repeat;
@@ -379,16 +469,79 @@
           background-position-x: 50%;
         }
       }
+
+
+
+
+      // .home-parent {
+      //   height: 384px;
+      //   width: 33.333%;
+      //   overflow: hidden;
+      //   display: inline-block;
+      //   img {
+      //     position: relative;
+      //     // width: 100%;
+      //     width: auto;
+      //     height: 100%;
+      //     overflow: hidden;
+      //     position: relative;
+      //     display: inline-block;
+      //     vertical-align: top;
+      //     border: 5px solid #fff;
+      //     box-shadow: 0 0 5px #ddd;
+      //     margin: 1em;
+      //     img:hover {
+      //       transition: all 0.5s linear;
+      //       transform: scale3d(1.2, 1.2, 1);
+      //     }
+      //     .home-child-overlay {
+      //       background: rgba(0, 0, 0, 0.3);
+      //       height: 100%;
+      //       width: 100%;
+      //       position: absolute;
+      //       z-index: 10;
+      //       font-size: 40px;
+      //       color: #ffffff;
+      //       font-family: $av;
+      //       padding: 0 8px;
+      //       p:first-of-type {
+      //         line-height: 43px;
+      //         margin-bottom: 10px;
+      //       }
+      //       .home-middle-hide {
+      //         display: block;
+      //         font-size: 17px;
+      //         line-height: 23px;
+      //         font-family: $robreg;
+      //       }
+      //     }
+      //   }
+      // }
+
+
+
+
+
+
+
     }
 
-    .home-child:hover {
-      transform: scale(1.05, 1.05);
-    }
+    // .home-child:hover {
+    //   transform: scale(1.05, 1.05);
+    //   opacity: 1;
+    //   cursor: pointer;
+    // }
 
-    .home-child-overlay:hover {
-      // background-color: rgba(255,255,255,1);
-      opacity: 0;
-    }
+    // .home-child-overlay:hover {
+    //   // background-color: rgba(255,255,255,1);
+    //   opacity: 0;
+    // }
+
+
+
+
+
+
 
 
 
