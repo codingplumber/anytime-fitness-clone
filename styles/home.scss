@@ -221,7 +221,7 @@
           order: 2;
           p {
             font-size: 27px;
-            line-height: 60px;
+            line-height: 45px;
             span {
               display: none;
             }
@@ -244,7 +244,9 @@
           }
         }
         .home-top-div2 {
-          margin-bottom: 51px;
+          padding-left: 10%;
+          padding-right: 10%;
+          margin-bottom: 58px;
           order: 1;
           .home-div2-text1 {
             font-size: 40px;
@@ -287,5 +289,14 @@
         }
       }
     }
+  }
+}
+
+////////////////////// 990 ////////////////////
+
+@media (min-width: 990px) {
+  .home-top-div2 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
