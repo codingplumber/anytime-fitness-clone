@@ -9,6 +9,9 @@
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+  box-shadow: 0 10px 7px -7px #231f2b;
+  -webkit-box-shadow: 0 10px 7px -7px #231f2b;
+  -moz-box-shadow: 0 10px 7px -7px #231f2b;
   .header-left {
     .header-top {
       height: 70px;
@@ -183,6 +186,9 @@
     height: 70px;
     width: 100%;
     display: flex;
+    box-shadow: 0 10px 7px -7px #231f2b;
+    -webkit-box-shadow: 0 10px 7px -7px #231f2b;
+    -moz-box-shadow: 0 10px 7px -7px #231f2b;
     .home-sub-wrapper {
       width: 100%;
       background: rgba(128,76,158, .9);
@@ -193,6 +199,9 @@
       text-align: center;
       .home-logo-a {
         padding: 15px 0 15px 15px;
+        img:hover {
+          background: black;
+        }
       }
       .header-icon {
         height: 35px;

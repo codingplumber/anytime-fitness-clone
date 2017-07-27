@@ -1,12 +1,5 @@
 @import 'fonts';
 
-.home-shadow {
-  position: relative;
-  -moz-box-shadow:    inset 0 30px 15px -7px #1e1e1e;
-  -webkit-box-shadow: inset 0 30px 15px -7px #1e1e1e;
-  box-shadow:         inset 0 30px 15px -7px #1e1e1e;
-}
-
 #learn-hover:hover {
   background: #ffffff;
   color: #804c9e;
@@ -27,9 +20,6 @@
 }
 
 .home-main-wrapper {
-  // -moz-box-shadow:    inset 0 30px 15px -7px #1e1e1e;
-  // -webkit-box-shadow: inset 0 30px 15px -7px #1e1e1e;
-  // box-shadow:         inset 0 30px 15px -7px #1e1e1e;
   .home-top {
     background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
     background-size: cover;
@@ -45,10 +35,10 @@
       position: absolute;
       top: 0;
       left: 0;
-      padding: 95px 15px 0 15px;
+      padding: 102px 15px 0 15px;
       .home-top-div1 {
         text-align: center;
-        margin-bottom: 45px;
+        margin-bottom: 90px;
         p {
           font-size: 20px;
           color: #ffffff;
@@ -84,7 +74,7 @@
         color: #fff;
         text-align: center;
         position: relative;
-        margin-bottom: 66px;
+        margin-bottom: 77px;
         .home-div2-text1 {
           font-size: 30px;
           font-family: $robreg;
