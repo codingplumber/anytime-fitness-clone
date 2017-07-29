@@ -442,3 +442,28 @@ header {
     }
   }
 }
+
+///////////////// 1700 ///////////////////////
+
+@media (min-width: 1700px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 15% 0 15%;
+    }
+
+    .training-middle {
+      .training-videos {
+        margin-right: 3.25%;
+        margin-left: 3.25%;
+        width: 384px;
+        .training-video-text {
+          height: 276px;
+          p:first-of-type {
+            padding-left: 9%;
+            padding-right: 9%;
+          }
+        }
+      }
+    }
+  }
+}

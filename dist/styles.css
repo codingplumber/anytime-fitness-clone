@@ -413,7 +413,7 @@
     box-shadow: 0 10px 7px -7px #231f2b;
     -webkit-box-shadow: 0 10px 7px -7px #231f2b;
     -moz-box-shadow: 0 10px 7px -7px #231f2b; }
-    .header-wrapper2 .home-sub-wrapper {
+    .header-wrapper2 .header-sub-wrapper {
       width: 100%;
       background: rgba(128, 76, 158, 0.9);
       z-index: 1000;
@@ -421,25 +421,25 @@
       font-family: "averta";
       display: flex;
       text-align: center; }
-      .header-wrapper2 .home-sub-wrapper .home-logo-a {
+      .header-wrapper2 .header-sub-wrapper .header-logo-a {
         padding: 15px 0 15px 15px; }
-        .header-wrapper2 .home-sub-wrapper .home-logo-a img:hover {
+        .header-wrapper2 .header-sub-wrapper .header-logo-a img:hover {
           background: black; }
-      .header-wrapper2 .home-sub-wrapper .header-icon {
+      .header-wrapper2 .header-sub-wrapper .header-icon {
         height: 35px;
         width: auto; }
-      .header-wrapper2 .home-sub-wrapper .header-links-main {
+      .header-wrapper2 .header-sub-wrapper .header-links-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         padding-left: 20px;
         padding-right: 20px; }
-        .header-wrapper2 .home-sub-wrapper .header-links-main .header-links {
+        .header-wrapper2 .header-sub-wrapper .header-links-main .header-links {
           text-decoration: none;
           font-size: 14px;
           color: #ffffff; }
-        .header-wrapper2 .home-sub-wrapper .header-links-main .header-links:hover {
+        .header-wrapper2 .header-sub-wrapper .header-links-main .header-links:hover {
           color: #231f2b;
           transition: .2s; }
     .header-wrapper2 .header-hider {
@@ -469,6 +469,25 @@
     .header-wrapper2 .header-hider:hover a {
       transition: all 0.2s linear;
       color: #ffffff; } }
+
+@media (min-width: 1000px) {
+  .header-wrapper2 .header-sub-wrapper .header-logo-a {
+    padding: 15px 0 15px 42px; } }
+
+@media (min-width: 1200px) {
+  .header-wrapper2 .header-sub-wrapper .header-links-main {
+    padding-left: 42px;
+    padding-right: 42px; } }
+
+@media (min-width: 1300px) {
+  .header-wrapper2 .header-sub-wrapper .header-links-main {
+    padding-left: 10%;
+    padding-right: 10%; } }
+
+@media (min-width: 1700px) {
+  .header-wrapper2 .header-sub-wrapper .header-links-main {
+    padding-left: 16%;
+    padding-right: 16%; } }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @font-face {
@@ -1415,6 +1434,19 @@ header {
         .training-wrapper .training-middle .training-videos .training-video-text p:first-of-type {
           padding-left: 0;
           padding-right: 0; } }
+
+@media (min-width: 1700px) {
+  .training-wrapper .training-top {
+    padding: 0 15% 0 15%; }
+  .training-wrapper .training-middle .training-videos {
+    margin-right: 3.25%;
+    margin-left: 3.25%;
+    width: 384px; }
+    .training-wrapper .training-middle .training-videos .training-video-text {
+      height: 276px; }
+      .training-wrapper .training-middle .training-videos .training-video-text p:first-of-type {
+        padding-left: 9%;
+        padding-right: 9%; } }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
