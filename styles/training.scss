@@ -67,11 +67,17 @@ header {
       margin-bottom: 39px;
       a {
         color: #afbc21;
-        text-shadow: 2px 2px 2px #afbc21;
+        text-shadow: 1px -1px 1px #afbc21;
         letter-spacing: -1px;
         text-decoration: none;
         transition: all .15s linear;
         box-sizing: border-box;
+      }
+    }
+    .training-top-a:hover {
+      a {
+        color: #231f2b;
+        transition: .2s;
       }
     }
   }
@@ -159,13 +165,62 @@ header {
   }
 }
 
-///////////////////////////////////////////////
+////////////////// 375 ///////////////////////
+
+@media (min-width: 375px) and (max-width: 503px) {
+  .training-wrapper {
+    .training-middle {
+      .training-videos {
+        .training-video-text {
+          height: 275px;
+        }
+      }
+    }
+    .training-bottom {
+      height: 287px;
+      padding: 50px 13px 75px 13px;
+    }
+  }
+}
+
+////////////////// 504 ////////////////////////
+
+@media (min-width: 504px) and (max-width: 687px) {
+  .training-wrapper {
+    .training-middle {
+      .training-videos {
+        .training-video-text {
+          height: 249px;
+        }
+      }
+    }
+    .training-bottom {
+      height: 258px;
+    }
+  }
+}
+
+////////////////// 688 ////////////////////////
+
+@media (min-width: 688px) and (max-width: 769px) {
+  .training-wrapper {
+    .training-middle {
+      .training-videos {
+        .training-video-text {
+          height: 226px;
+        }
+      }
+    }
+  }
+}
+
+////////////////// 770 ////////////////////////
 
 @media (min-width: 770px) {
   .training-wrapper {
     padding-top: 221px;
     .training-top {
-      padding: 0 27px 0 27px;
+      padding: 0 3.5% 0 3.5%;
       .training-top-heading {
         font-size: 60px;
         margin-bottom: 23px;
@@ -195,13 +250,15 @@ header {
     }
 
     .training-middle {
-      padding: 0 27px 0 27px;
+      padding: 0;
       margin-bottom: 119px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
       .training-videos {
         margin-bottom: 0px;
+        margin-right: 3.5%;
+        margin-left: 3.5%;
         width: 200px;
         .training-video {
           i {
@@ -243,9 +300,10 @@ header {
         }
       }
     }
+
     .training-bottom {
       height: 258px;
-      padding: 48px 18px 0 18px;
+      padding: 48px 3% 0 3%;
       p {
         font-size: 21px;
         line-height: 31px;
@@ -257,6 +315,129 @@ header {
         border: #231f2b 3px solid;
         border-radius: 82px;
         font-size: 16px;
+      }
+    }
+  }
+}
+
+////////////////// 822 ///////////////////////
+
+@media (min-width: 822px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 6.5% 0 6.5%;
+    }
+
+    .training-bottom {
+      padding: 48px 5.5% 0 5.5%;
+    }
+  }
+}
+
+///////////////// 879 ///////////////////////
+
+@media (min-width: 879px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 9% 0 9%;
+    }
+
+    .training-bottom {
+      padding: 48px 8.5% 0 8.5%;
+    }
+  }
+}
+
+///////////////// 932 ///////////////////////
+
+@media (min-width: 932px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 11.5% 0 11.5%;
+    }
+
+    .training-bottom {
+      padding: 48px 11% 0 11%;
+    }
+  }
+}
+
+//////////////// 958 ////////////////////////
+
+@media (min-width: 958px) {
+  .training-wrapper {
+    .training-bottom {
+      padding: 48px 12% 0 12%;
+    }
+  }
+}
+
+//////////////// 992 ////////////////////////
+
+@media (min-width: 992px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 2.5% 0 2.5%;
+    }
+
+    .training-middle {
+      .training-videos {
+        margin-right: 2.75%;
+        margin-left: 2.75%;
+        width: 272px;
+        .training-video {
+          i {
+            font-size: 83px;
+            bottom: 16px;
+            right: 16px;
+          }
+        }
+        .training-video-text {
+          height: 357px;
+          p:first-of-type {
+            padding-left: 12%;
+            padding-right: 12%;
+          }
+          .training-txt {
+            padding-left: 0;
+            padding-right: 0;
+            p {
+              padding-left: 23px;
+              padding-right: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .training-bottom {
+      padding: 48px 2.5% 0 2.5%;
+      height: 230px;
+    }
+  }
+}
+
+///////////////// 1200 ///////////////////////
+
+@media (min-width: 1200px) {
+  .training-wrapper {
+    .training-top {
+      padding: 0 2% 0 2%;
+    }
+
+    .training-middle {
+      margin-bottom: 94px;
+      .training-videos {
+        margin-right: 2.25%;
+        margin-left: 2.25%;
+        width: 341px;
+        .training-video-text {
+          height: 296px;
+          p:first-of-type {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
       }
     }
   }
