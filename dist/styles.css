@@ -931,15 +931,30 @@
       font-size: 16px; }
 
 .join-wrapper .join-3 .join-triple-bottom a {
-  text-decoration: none; }
+  height: 200px;
+  width: 100%;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .join-wrapper .join-3 .join-triple-bottom a .join-t-underlay {
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
   .join-wrapper .join-3 .join-triple-bottom a .join-t-img {
-    height: 200px;
+    height: 100%;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
+    background-size: cover;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
     padding: 12px 15px;
-    color: #ffffff;
-    position: relative; }
+    color: #ffffff; }
     .join-wrapper .join-3 .join-triple-bottom a .join-t-img p {
       font-family: "roboreg";
       font-size: 18px;
@@ -954,6 +969,31 @@
         font-size: 16px;
         margin-right: 18px; }
       .join-wrapper .join-3 .join-triple-bottom a .join-t-img .join-3-vid i {
+        font-size: 22px; }
+  .join-wrapper .join-3 .join-triple-bottom a .join-t-hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.7;
+    cursor: pointer; }
+  .join-wrapper .join-3 .join-triple-bottom a .join-t-text {
+    width: 100%;
+    height: 100%;
+    padding: 12px 15px;
+    color: #ffffff;
+    z-index: 6; }
+    .join-wrapper .join-3 .join-triple-bottom a .join-t-text p {
+      font-family: "roboreg";
+      font-size: 18px;
+      line-height: 25px; }
+    .join-wrapper .join-3 .join-triple-bottom a .join-t-text .join-3-vid {
+      display: flex;
+      position: absolute;
+      bottom: 14px;
+      margin-left: 0px; }
+      .join-wrapper .join-3 .join-triple-bottom a .join-t-text .join-3-vid p {
+        font-family: "averta";
+        font-size: 16px;
+        margin-right: 18px; }
+      .join-wrapper .join-3 .join-triple-bottom a .join-t-text .join-3-vid i {
         font-size: 22px; }
 
 .join-wrapper .join-4 .join-4-heading {
@@ -1183,7 +1223,7 @@
             margin-right: 11px; }
           .join-wrapper .join-3 .join-triple-bottom a .join-t-img i {
             font-size: 19px;
-            margin-top: 3px; }
+            margin-top: 1px; }
   .join-wrapper .join-4 .join-4-heading {
     font-size: 60px;
     line-height: 65px;
@@ -1247,7 +1287,9 @@
   .join-wrapper .join-4 .join-lists {
     padding-left: 6%; }
     .join-wrapper .join-4 .join-lists .join-list {
-      padding-right: 6%; } }
+      padding-right: 6%; }
+  .join-wrapper .join-4 .join-disclaimer {
+    padding-left: 6%; } }
 
 @media (min-width: 847px) {
   .join-wrapper .join-2 {
@@ -1255,7 +1297,9 @@
   .join-wrapper .join-4 .join-lists {
     padding-left: 7%; }
     .join-wrapper .join-4 .join-lists .join-list {
-      padding-right: 7%; } }
+      padding-right: 7%; }
+  .join-wrapper .join-4 .join-disclaimer {
+    padding-left: 7%; } }
 
 @media (min-width: 889px) {
   .join-wrapper .join-2 {
@@ -1263,7 +1307,9 @@
   .join-wrapper .join-4 .join-lists {
     padding-left: 8%; }
     .join-wrapper .join-4 .join-lists .join-list {
-      padding-right: 8%; } }
+      padding-right: 8%; }
+  .join-wrapper .join-4 .join-disclaimer {
+    padding-left: 8%; } }
 
 @media (min-width: 934px) {
   .join-wrapper .join-2 {
@@ -1271,7 +1317,9 @@
   .join-wrapper .join-4 .join-lists {
     padding-left: 9%; }
     .join-wrapper .join-4 .join-lists .join-list {
-      padding-right: 9%; } }
+      padding-right: 9%; }
+  .join-wrapper .join-4 .join-disclaimer {
+    padding-left: 9%; } }
 
 @media (min-width: 983px) {
   .join-wrapper .join-2 {
@@ -1280,7 +1328,9 @@
     padding-left: 12%;
     padding-right: 6%; }
     .join-wrapper .join-4 .join-lists .join-list {
-      padding-right: 7%; } }
+      padding-right: 7%; }
+  .join-wrapper .join-4 .join-disclaimer {
+    padding-left: 12%; } }
 
 @media (min-width: 992px) {
   .join-wrapper .join-1 {
@@ -1309,8 +1359,6 @@
       padding-right: 3%; }
   .join-wrapper .join-3 .join-triple-bottom {
     width: 940px; }
-    .join-wrapper .join-3 .join-triple-bottom a .join-t-img i {
-      margin-top: 1px; }
   .join-wrapper .join-4 .join-4-heading {
     padding: 204px 4% 54px 4%; }
   .join-wrapper .join-4 .join-lists {

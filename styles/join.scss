@@ -145,15 +145,62 @@
     }
     .join-triple-bottom {
       a {
+        height: 200px;
+        width: 100%;
         text-decoration: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .join-t-underlay {
+          background: black;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
         .join-t-img {
-          height: 200px;
+          height: 100%;
           width: 100%;
           background-position-x: 50%;
           background-position-y: 50%;
+          background-size: cover;
+          transition: all 0.2s linear;
+          overflow: hidden;
+          position: absolute;
+          z-index: 5;
           padding: 12px 15px;
           color: #ffffff;
-          position: relative;
+          p {
+            font-family: $robreg;
+            font-size: 18px;
+            line-height: 25px;
+          }
+          .join-3-vid {
+            display: flex;
+            position: absolute;
+            bottom: 14px;
+            margin-left: 0px;
+            p {
+              font-family: $av;
+              font-size: 16px;
+              margin-right: 18px;
+            }
+            i {
+              font-size: 22px;
+            }
+          }
+        }
+        .join-t-hover {
+          transform: scale(1.05, 1.05);
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        .join-t-text {
+          width: 100%;
+          height: 100%;
+          padding: 12px 15px;
+          color: #ffffff;
+          z-index: 6;
           p {
             font-family: $robreg;
             font-size: 18px;
@@ -526,7 +573,7 @@
             }
             i {
               font-size: 19px;
-              margin-top: 3px;
+              margin-top: 1px;
             }
           }
         }
@@ -642,6 +689,9 @@
           padding-right: 6%;
         }
       }
+      .join-disclaimer {
+        padding-left: 6%;
+      }
     }
   }
 }
@@ -660,6 +710,9 @@
         .join-list {
           padding-right: 7%;
         }
+      }
+      .join-disclaimer {
+        padding-left: 7%;
       }
     }
   }
@@ -680,6 +733,9 @@
           padding-right: 8%;
         }
       }
+      .join-disclaimer {
+        padding-left: 8%;
+      }
     }
   }
 }
@@ -698,6 +754,9 @@
         .join-list {
           padding-right: 9%;
         }
+      }
+      .join-disclaimer {
+        padding-left: 9%;
       }
     }
   }
@@ -718,6 +777,9 @@
         .join-list {
           padding-right: 7%;
         }
+      }
+      .join-disclaimer {
+        padding-left: 12%;
       }
     }
   }
@@ -769,13 +831,6 @@
     .join-3 {
       .join-triple-bottom {
         width: 940px;
-        a {
-          .join-t-img {
-            i {
-              margin-top: 1px;
-            }
-          }
-        }
       }
     }
 
