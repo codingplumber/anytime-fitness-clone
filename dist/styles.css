@@ -143,7 +143,8 @@
         margin-bottom: 19px;
         line-height: 20px; }
       .footer-bottom .footer-bottom-nav .footer-bottom-text .footer-bottom-subheading p:hover {
-        color: #ffffff; }
+        color: #ffffff;
+        cursor: pointer; }
   .footer-bottom .footer-bottom-etc .footer-social-media {
     display: flex;
     flex-flow: row-reverse wrap; }
@@ -177,7 +178,8 @@
         .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle a .i7 {
           font-size: 27px; }
     .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle:hover {
-      border: #ffffff 2px solid; }
+      border: #ffffff 2px solid;
+      cursor: pointer; }
       .footer-bottom .footer-bottom-etc .footer-social-media .footer-social-circle:hover a i {
         color: #ffffff; }
   .footer-bottom .footer-bottom-etc .footer-self-esteem {
@@ -362,7 +364,11 @@
     padding: 0 17px 0 17px; }
     .header-wrapper .header-left .header-top img {
       height: 35px;
-      width: auto; }
+      width: auto;
+      transition: all 0.2s; }
+    .header-wrapper .header-left .header-top img:hover {
+      filter: sepia(1) brightness(8%);
+      cursor: pointer; }
   .header-wrapper .header-left .header-mobile {
     height: 55px;
     width: 100%;
@@ -505,8 +511,12 @@
       display: flex;
       text-align: center; }
       .header-wrapper2 .header-sub-wrapper .header-logo-a {
-        padding: 15px 0 15px 15px;
-        cursor: pointer; }
+        padding: 15px 0 15px 15px; }
+        .header-wrapper2 .header-sub-wrapper .header-logo-a img {
+          transition: all 0.2s; }
+        .header-wrapper2 .header-sub-wrapper .header-logo-a img:hover {
+          filter: sepia(1) brightness(8%);
+          cursor: pointer; }
       .header-wrapper2 .header-sub-wrapper .header-icon {
         height: 35px;
         width: auto; }
@@ -581,21 +591,6 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
-#learn-hover:hover {
-  background: #ffffff;
-  color: #804c9e;
-  transition: .4s; }
-  #learn-hover:hover i {
-    opacity: 1; }
-
-#home-text-blur:hover {
-  opacity: 0.8;
-  transition: .5s; }
-
-.home-scale:hover {
-  transform: scale(1.5, 1.5);
-  transition: .25s; }
-
 .home-main-wrapper .home-top {
   background: url("./images/home/anytime-fitness-weights-mobile.jpg") no-repeat;
   background-size: cover;
@@ -649,7 +644,8 @@
       color: #fff;
       text-align: center;
       position: relative;
-      margin-bottom: 77px; }
+      margin-bottom: 77px;
+      transition: .3s; }
       .home-main-wrapper .home-top .home-top-overlay .home-top-div2 .home-div2-text1 {
         font-size: 30px;
         font-family: "roboreg";
@@ -661,6 +657,9 @@
           font-size: 50%;
           position: absolute;
           bottom: 27px; }
+    .home-main-wrapper .home-top .home-top-overlay .home-top-div2:hover {
+      opacity: 0.8;
+      cursor: pointer; }
     .home-main-wrapper .home-top .home-top-overlay .home-top-div3 {
       display: flex;
       justify-content: center; }
@@ -682,6 +681,13 @@
         .home-main-wrapper .home-top .home-top-overlay .home-top-div3 button i {
           font-size: 2em;
           opacity: 0.6; }
+      .home-main-wrapper .home-top .home-top-overlay .home-top-div3 button:hover {
+        background: #ffffff;
+        color: #804c9e;
+        transition: .4s;
+        cursor: pointer; }
+        .home-main-wrapper .home-top .home-top-overlay .home-top-div3 button:hover i {
+          opacity: 1; }
 
 .home-main-wrapper .home-middle .home-parent {
   height: 384px;

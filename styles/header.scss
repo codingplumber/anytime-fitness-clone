@@ -27,6 +27,11 @@
       img {
         height: 35px;
         width: auto;
+        transition: all 0.2s;
+      }
+      img:hover {
+        filter: sepia(1) brightness(8%);
+        cursor: pointer;
       }
     }
     .header-mobile {
@@ -198,8 +203,15 @@
       text-align: center;
       .header-logo-a {
         padding: 15px 0 15px 15px;
-        cursor: pointer;
+        img {
+          transition: all 0.2s;          
+        }
+        img:hover {
+          filter: sepia(1) brightness(8%);
+          cursor: pointer;
+        }
       }
+
       .header-icon {
         height: 35px;
         width: auto;

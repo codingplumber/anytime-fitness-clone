@@ -23,6 +23,7 @@
         }
         p:hover {
           color: #ffffff;
+          cursor: pointer;
         }
       }
     }
@@ -73,6 +74,7 @@
       }
       .footer-social-circle:hover {
         border: #ffffff 2px solid;
+        cursor: pointer;
         a {
           i {
             color: #ffffff;

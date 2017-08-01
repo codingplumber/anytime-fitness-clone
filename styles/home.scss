@@ -1,23 +1,23 @@
 @import 'fonts';
 
-#learn-hover:hover {
-  background: #ffffff;
-  color: #804c9e;
-  transition: .4s;
-  i {
-    opacity: 1;
-  }
-}
+// #learn-hover:hover {
+//   background: #ffffff;
+//   color: #804c9e;
+//   transition: .4s;
+//   i {
+//     opacity: 1;
+//   }
+// }
 
-#home-text-blur:hover {
-  opacity: 0.8;
-  transition: .5s;
-}
+// #home-text-blur:hover {
+//   opacity: 0.8;
+//   transition: .5s;
+// }
 
-.home-scale:hover {
-  transform: scale(1.5, 1.5);
-  transition: .25s;
-}
+// .home-scale:hover {
+//   transform: scale(1.5, 1.5);
+//   transition: .25s;
+// }
 
 .home-main-wrapper {
   .home-top {
@@ -80,6 +80,7 @@
         text-align: center;
         position: relative;
         margin-bottom: 77px;
+        transition: .3s;
         .home-div2-text1 {
           font-size: 30px;
           font-family: $robreg;
@@ -94,6 +95,10 @@
             bottom: 27px;
           }
         }
+      }
+      .home-top-div2:hover {
+        opacity: 0.8;
+        cursor: pointer;
       }
       .home-top-div3 {
         display: flex;
@@ -117,6 +122,15 @@
           i {
             font-size: 2em;
             opacity: 0.6;
+          }
+        }
+        button:hover {
+          background: #ffffff;
+          color: #804c9e;
+          transition: .4s;
+          cursor: pointer;
+          i {
+            opacity: 1;
           }
         }
       }
