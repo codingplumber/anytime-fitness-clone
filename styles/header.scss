@@ -198,9 +198,7 @@
       text-align: center;
       .header-logo-a {
         padding: 15px 0 15px 15px;
-        img:hover {
-          background: black;
-        }
+        cursor: pointer;
       }
       .header-icon {
         height: 35px;
@@ -221,6 +219,7 @@
         .header-links:hover {
           color: #231f2b;
           transition: .2s;
+          cursor: pointer;
         }
       }
     }

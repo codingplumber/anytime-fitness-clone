@@ -67,6 +67,11 @@
             border: none;
             color: #ffffff;
             font-size: 22px;
+            transition: all 0.2s linear;
+          }
+          button:hover {
+            background: #432f4e;
+            cursor: pointer;
           }
         }
       }

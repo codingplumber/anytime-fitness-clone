@@ -42,7 +42,11 @@
       border-radius: 0 8px 8px 0;
       border: none;
       color: #ffffff;
-      font-size: 18px; }
+      font-size: 18px;
+      transition: all 0.2s linear; }
+    .find-wrapper .find .find-search button:hover {
+      background: #432f4e;
+      cursor: pointer; }
   .find-wrapper .find .find-locations {
     display: flex;
     flex-direction: column;
@@ -501,9 +505,8 @@
       display: flex;
       text-align: center; }
       .header-wrapper2 .header-sub-wrapper .header-logo-a {
-        padding: 15px 0 15px 15px; }
-        .header-wrapper2 .header-sub-wrapper .header-logo-a img:hover {
-          background: black; }
+        padding: 15px 0 15px 15px;
+        cursor: pointer; }
       .header-wrapper2 .header-sub-wrapper .header-icon {
         height: 35px;
         width: auto; }
@@ -520,7 +523,8 @@
           color: #ffffff; }
         .header-wrapper2 .header-sub-wrapper .header-links-main .header-links:hover {
           color: #231f2b;
-          transition: .2s; }
+          transition: .2s;
+          cursor: pointer; }
     .header-wrapper2 .header-hider {
       display: none; } }
 
@@ -636,7 +640,11 @@
           border-radius: 0 6px 6px 0;
           border: none;
           color: #ffffff;
-          font-size: 22px; }
+          font-size: 22px;
+          transition: all 0.2s linear; }
+        .home-main-wrapper .home-top .home-top-overlay .home-top-div1 .home-location-search button:hover {
+          background: #432f4e;
+          cursor: pointer; }
     .home-main-wrapper .home-top .home-top-overlay .home-top-div2 {
       color: #fff;
       text-align: center;
