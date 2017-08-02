@@ -64,6 +64,7 @@
           justify-content: space-around;
           align-items: center;
           padding: 0 20px;
+          outline: none;
           .join-tour {
             font-family: $av;
           }
@@ -137,6 +138,7 @@
         border: #ffffff 3px solid;
         border-radius: 82px;
         color: #ffffff;
+        outline: none;
         .join-catherine {
           font-family: $av;
           font-size: 16px;
@@ -305,6 +307,7 @@
         font-size: 15px;
         padding-left: 22px;
         font-family: $robreg;
+        outline: none;
       }
       button {
         height: 52px;
@@ -314,6 +317,12 @@
         border: none;
         color: #ffffff;
         font-size: 21px;
+        outline: none;
+        transition: all 0.2s linear;
+      }
+      button:hover {
+        background: #432f4e;
+        cursor: pointer;
       }
     }
   }

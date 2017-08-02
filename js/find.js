@@ -1,13 +1,14 @@
 angular.module('app')
 .controller('findCtrl', function($scope, mainSrvc, $http) {
 
-  // var lat,
-  //     lng;
+  var lat,
+      lng,
+      map,
+      infoWindow;
 
-  ///////////////////////////Maps////////////////////////////////////////////
+  ////////////////////////// MAPS ///////////////////////////////////////////
   $scope.initMap = (lat, lng) => {
     var options = {};
-
     // Map options
     if (!lat && !lng) {
       options = {
@@ -32,7 +33,46 @@ angular.module('app')
   }
   //
   $scope.initMap(lat, lng);
-  //////////////////////Geocoding///////////////////////////////////////////
+
+  /////////////////// Get User's Location //////////////////////////////////
+
+  $scope.myLoc = () => {
+    map = new google.maps.Map(document.getElementById('map'), {
+      // center: { lat: 39.50, lng: -98.35 },
+      zoom: 13
+    });
+    infoWindow = new google.maps.InfoWindow;
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('Location found.');
+        infoWindow.open(map);
+        map.setCenter(pos);
+      }, function() {
+        handleLocationError(true, infoWindow, map.getCenter());
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  }
+
+  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+                          'Error: The Geolocation service failed.' :
+                          'Error: Your browser doesn\'t support geolocation.');
+    infoWindow.open(map);
+  }
+
+  ///////////////////// GEOCODING //////////////////////////////////////////
 
   // Turn address or zip into geolocation
   $scope.getGeo = (location) => {
@@ -41,7 +81,6 @@ angular.module('app')
       .then(response => {
         lat = response.lat;
         lng = response.lng;
-        console.log(lat, lng);
 
         $scope.initMap(lat, lng);
       })
@@ -50,68 +89,5 @@ angular.module('app')
     $scope.location = '';
   }
 
-  /////////////////////Places//////////////////////////////////////////////
-
-  // $scope.getPlaces = () => {
-  //   mainSrvc
-  //     .getPlaces()
-  //     .then(response => {
-  //       console.log('ctrl', response);
-  //     })
-  // }
-
-  //////////// practice hitting api ///////////////////////////
-  $scope.getPlaces = () => {
-    return $http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew')
-    .then(response => {
-      console.log('srvc', response)
-    })
-    .catch(error => {
-      console.log('places error:', error);
-    })
-  };
-
-  $scope.getPlaces();
-
-  /////////////////////////////////////////////////////////////////////////
-
-  //
-  // var mapOptions = {
-  //   zoom: 4,
-  //   center: new google.maps.LatLng(25,80),
-  //   mapTypeId: google.maps.MapTypeId.TERRAIN
-  // }
-  //
-  // $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  //
-  // $scope.markers = [];
-  //
-  // var infoWindow = new google.maps.InfoWindow();
-  //
-  // var createMarker = function(info) {
-  //
-  //   var marker = new google.maps.Marker({
-  //     map: $scope.map,
-  //     position: new google.maps.LatLng(info.lat, info.long),
-  //     title: info.city
-  //   });
-  //   marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
-  //
-  //   google.maps.event.addListener(marker, 'click', function(){
-  //   infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
-  //   infoWindow.open($scope.map, marker);
-  //   });
-  //
-  //   $scope.markers.push(marker);
-  // }
-  //
-  // // for (var i = 0; i < cities.length; i++){
-  // //   createMarker(cities[i]);
-  // // }
-  //
-  // $scope.openInfoWindow = function(e, selectedMarker){
-  //   e.preventDefault();
-  //   google.maps.event.trigger(selectedMarker, 'click');
-  // }
 
 })

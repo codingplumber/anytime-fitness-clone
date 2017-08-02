@@ -58,6 +58,7 @@
             font-size: 15px;
             padding-left: 20px;
             font-family: $robreg;
+            outline: none;
           }
           button {
             height: 50px;
@@ -68,6 +69,7 @@
             color: #ffffff;
             font-size: 22px;
             transition: all 0.2s linear;
+            outline: none;
           }
           button:hover {
             background: #432f4e;
@@ -116,6 +118,7 @@
           justify-content: space-around;
           align-items: center;
           padding: 0 21px;
+          outline: none;
           p {
             font-family: $av;
           }

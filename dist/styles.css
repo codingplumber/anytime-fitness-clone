@@ -10,7 +10,7 @@
 .find-wrapper .find {
   background: url("./images/join/gym-finder-background.jpg") no-repeat;
   background-size: cover;
-  height: 216px;
+  height: 271px;
   width: 100%;
   background-position-x: 50%;
   color: #ffffff;
@@ -26,7 +26,7 @@
     display: flex;
     heigth: 49px;
     width: 100%;
-    margin-bottom: 22px; }
+    margin-bottom: 98px; }
     .find-wrapper .find .find-search input {
       height: 49px;
       width: 80%;
@@ -34,7 +34,8 @@
       border: none;
       font-size: 14px;
       padding-left: 20px;
-      font-family: "roboreg"; }
+      font-family: "roboreg";
+      outline: none; }
     .find-wrapper .find .find-search button {
       height: 49px;
       width: 59px;
@@ -43,7 +44,8 @@
       border: none;
       color: #ffffff;
       font-size: 18px;
-      transition: all 0.2s linear; }
+      transition: all 0.2s linear;
+      outline: none; }
     .find-wrapper .find .find-search button:hover {
       background: #432f4e;
       cursor: pointer; }
@@ -54,14 +56,22 @@
     padding-left: 14%; }
     .find-wrapper .find .find-locations .find-current {
       display: flex;
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      transition: all 0.2s; }
       .find-wrapper .find .find-locations .find-current i {
         margin-right: 12px; }
+    .find-wrapper .find .find-locations .find-current:hover {
+      color: #bbabc4;
+      cursor: pointer; }
     .find-wrapper .find .find-locations .find-all {
-      display: flex; }
+      display: flex;
+      transition: all 0.2s; }
       .find-wrapper .find .find-locations .find-all i {
         margin-right: 16px;
         padding-left: 1%; }
+    .find-wrapper .find .find-locations .find-all:hover {
+      color: #bbabc4;
+      cursor: pointer; }
 
 @media (min-width: 770px) {
   header {
@@ -70,7 +80,7 @@
   .find-wrapper {
     margin-top: 70px; }
     .find-wrapper .find {
-      height: 193px;
+      height: 271px;
       padding: 30px 0 0 0;
       font-size: 18px; }
       .find-wrapper .find .find-heading {
@@ -85,7 +95,7 @@
         heigth: 51px;
         width: 100%;
         justify-content: center;
-        margin-bottom: 21px; }
+        margin-bottom: 98px; }
         .find-wrapper .find .find-search input {
           height: 51px;
           width: 301px;
@@ -627,7 +637,8 @@
           border: none;
           font-size: 15px;
           padding-left: 20px;
-          font-family: "roboreg"; }
+          font-family: "roboreg";
+          outline: none; }
         .home-main-wrapper .home-top .home-top-overlay .home-top-div1 .home-location-search button {
           height: 50px;
           width: 65px;
@@ -636,7 +647,8 @@
           border: none;
           color: #ffffff;
           font-size: 22px;
-          transition: all 0.2s linear; }
+          transition: all 0.2s linear;
+          outline: none; }
         .home-main-wrapper .home-top .home-top-overlay .home-top-div1 .home-location-search button:hover {
           background: #432f4e;
           cursor: pointer; }
@@ -675,7 +687,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 21px; }
+        padding: 0 21px;
+        outline: none; }
         .home-main-wrapper .home-top .home-top-overlay .home-top-div3 button p {
           font-family: "averta"; }
         .home-main-wrapper .home-top .home-top-overlay .home-top-div3 button i {
@@ -884,7 +897,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 20px; }
+        padding: 0 20px;
+        outline: none; }
         .join-wrapper .join-1 .join-top .join-top-button button .join-tour {
           font-family: "averta"; }
         .join-wrapper .join-1 .join-top .join-top-button button i {
@@ -939,7 +953,8 @@
     width: 266px;
     border: #ffffff 3px solid;
     border-radius: 82px;
-    color: #ffffff; }
+    color: #ffffff;
+    outline: none; }
     .join-wrapper .join-3 .join-single-bottom button .join-catherine {
       font-family: "averta";
       font-size: 16px; }
@@ -1078,7 +1093,8 @@
       border: none;
       font-size: 15px;
       padding-left: 22px;
-      font-family: "roboreg"; }
+      font-family: "roboreg";
+      outline: none; }
     .join-wrapper .join-5 .join-search button {
       height: 52px;
       width: 58px;
@@ -1086,7 +1102,12 @@
       border-radius: 0 6px 6px 0;
       border: none;
       color: #ffffff;
-      font-size: 21px; }
+      font-size: 21px;
+      outline: none;
+      transition: all 0.2s linear; }
+    .join-wrapper .join-5 .join-search button:hover {
+      background: #432f4e;
+      cursor: pointer; }
 
 .join-img-1 {
   background: url("./images/join/face.jpg") no-repeat;
@@ -1587,7 +1608,8 @@ header {
         border-radius: 82px;
         font-size: 17px;
         text-align: center;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        outline: none; }
         .training-wrapper .training-top .training-top-button button span {
           display: none; }
     .training-wrapper .training-top .training-top-a {
@@ -1667,7 +1689,8 @@ header {
       border-radius: 82px;
       font-size: 16px;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      outline: none; }
 
 @media (min-width: 375px) and (max-width: 503px) {
   .training-wrapper .training-middle .training-videos .training-video-text {

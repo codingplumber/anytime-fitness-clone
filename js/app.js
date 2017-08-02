@@ -3,13 +3,6 @@ angular.module('app', ['ui.router'])
 
   $urlRouterProvider.otherwise('/');
 
-  // $sceDelegateProvider.resourceUrlWhitelist([
-  //   // Allow same origin resource loads.
-  //   'self',
-  //   // Allow loading from our assets domain. **.
-  //   'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.9229483,-85.3601307&radius=50000&type=gym&keyword=fitness&key=AIzaSyCx16yw2rLTZKQt6zhgLQfVjjZdQoCXZew'
-  // ]);
-
   $stateProvider
     .state('home', {
       url: '/',

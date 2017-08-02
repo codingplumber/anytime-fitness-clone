@@ -4,7 +4,7 @@
   .find {
     background: url('./images/join/gym-finder-background.jpg') no-repeat;
     background-size: cover;
-    height: 216px;
+    height: 271px;
     width: 100%;
     background-position-x: 50%;
     color: #ffffff;
@@ -22,7 +22,7 @@
       display: flex;
       heigth: 49px;
       width: 100%;
-      margin-bottom: 22px;
+      margin-bottom: 98px;
       input {
         height: 49px;
         width: 80%;
@@ -31,6 +31,7 @@
         font-size: 14px;
         padding-left: 20px;
         font-family: $robreg;
+        outline: none;
       }
       button {
         height: 49px;
@@ -41,6 +42,7 @@
         color: #ffffff;
         font-size: 18px;
         transition: all 0.2s linear;
+        outline: none;
       }
       button:hover {
         background: #432f4e;
@@ -55,16 +57,26 @@
       .find-current {
         display: flex;
         margin-bottom: 7px;
+        transition: all 0.2s;
         i {
           margin-right: 12px;
         }
       }
+      .find-current:hover {
+        color: #bbabc4;
+        cursor: pointer;
+      }
       .find-all {
         display: flex;
+        transition: all 0.2s;
         i {
           margin-right: 16px;
           padding-left: 1%;
         }
+      }
+      .find-all:hover {
+        color: #bbabc4;
+        cursor: pointer;
       }
     }
   }
@@ -81,7 +93,7 @@
   .find-wrapper {
     margin-top: 70px;
     .find {
-      height: 193px;
+      height: 271px;
       padding: 30px 0 0 0;
       font-size: 18px;
       .find-heading {
@@ -98,7 +110,7 @@
         heigth: 51px;
         width: 100%;
         justify-content: center;
-        margin-bottom: 21px;
+        margin-bottom: 98px;
         input {
           height: 51px;
           width: 301px;
