@@ -190,6 +190,7 @@
     height: 70px;
     width: 100%;
     display: flex;
+    z-index: 5;
     box-shadow: 0 10px 7px -7px #231f2b;
     -webkit-box-shadow: 0 10px 7px -7px #231f2b;
     -moz-box-shadow: 0 10px 7px -7px #231f2b;
@@ -204,7 +205,7 @@
       .header-logo-a {
         padding: 15px 0 15px 15px;
         img {
-          transition: all 0.2s;          
+          transition: all 0.2s;
         }
         img:hover {
           filter: sepia(1) brightness(8%);

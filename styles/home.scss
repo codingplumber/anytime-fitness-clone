@@ -1,24 +1,5 @@
 @import 'fonts';
 
-// #learn-hover:hover {
-//   background: #ffffff;
-//   color: #804c9e;
-//   transition: .4s;
-//   i {
-//     opacity: 1;
-//   }
-// }
-
-// #home-text-blur:hover {
-//   opacity: 0.8;
-//   transition: .5s;
-// }
-
-// .home-scale:hover {
-//   transform: scale(1.5, 1.5);
-//   transition: .25s;
-// }
-
 .home-main-wrapper {
   .home-top {
     background: url('./images/home/anytime-fitness-weights-mobile.jpg') no-repeat;
@@ -222,7 +203,7 @@
       background-position-x: 50%;
       height: 835px;
       opacity: 0.9;
-      position: initial;
+      position: relative;
       .home-top-overlay {
         display: flex;
         flex-direction: column;

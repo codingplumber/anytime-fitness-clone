@@ -7,133 +7,6 @@
   font-family: "roboreg";
   src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
 
-.find-wrapper .find {
-  background: url("./images/join/gym-finder-background.jpg") no-repeat;
-  background-size: cover;
-  height: 271px;
-  width: 100%;
-  background-position-x: 50%;
-  color: #ffffff;
-  text-align: center;
-  padding: 19px 12px 0 12px;
-  font-family: "roboreg";
-  font-size: 18px; }
-  .find-wrapper .find .find-heading {
-    margin-bottom: 7px; }
-    .find-wrapper .find .find-heading p {
-      line-height: 25px; }
-  .find-wrapper .find .find-search {
-    display: flex;
-    heigth: 49px;
-    width: 100%;
-    margin-bottom: 98px; }
-    .find-wrapper .find .find-search input {
-      height: 49px;
-      width: 80%;
-      border-radius: 8px 0 0 8px;
-      border: none;
-      font-size: 14px;
-      padding-left: 20px;
-      font-family: "roboreg";
-      outline: none; }
-    .find-wrapper .find .find-search button {
-      height: 49px;
-      width: 59px;
-      background: #804c9e;
-      border-radius: 0 8px 8px 0;
-      border: none;
-      color: #ffffff;
-      font-size: 18px;
-      transition: all 0.2s linear;
-      outline: none; }
-    .find-wrapper .find .find-search button:hover {
-      background: #432f4e;
-      cursor: pointer; }
-  .find-wrapper .find .find-locations {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 14%; }
-    .find-wrapper .find .find-locations .find-current {
-      display: flex;
-      margin-bottom: 7px;
-      transition: all 0.2s; }
-      .find-wrapper .find .find-locations .find-current i {
-        margin-right: 12px; }
-    .find-wrapper .find .find-locations .find-current:hover {
-      color: #bbabc4;
-      cursor: pointer; }
-    .find-wrapper .find .find-locations .find-all {
-      display: flex;
-      transition: all 0.2s; }
-      .find-wrapper .find .find-locations .find-all i {
-        margin-right: 16px;
-        padding-left: 1%; }
-    .find-wrapper .find .find-locations .find-all:hover {
-      color: #bbabc4;
-      cursor: pointer; }
-
-@media (min-width: 770px) {
-  header {
-    top: 0;
-    position: fixed; }
-  .find-wrapper {
-    margin-top: 70px; }
-    .find-wrapper .find {
-      height: 271px;
-      padding: 30px 0 0 0;
-      font-size: 18px; }
-      .find-wrapper .find .find-heading {
-        margin-bottom: 22px;
-        display: flex;
-        justify-content: center; }
-        .find-wrapper .find .find-heading p {
-          margin-right: 4px;
-          line-height: 0; }
-      .find-wrapper .find .find-search {
-        display: flex;
-        heigth: 51px;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 98px; }
-        .find-wrapper .find .find-search input {
-          height: 51px;
-          width: 301px;
-          border-radius: 8px 0 0 8px;
-          font-size: 15px;
-          padding-left: 19px; }
-        .find-wrapper .find .find-search button {
-          height: 51px;
-          width: 64px;
-          border-radius: 0 8px 8px 0;
-          font-size: 20px; }
-      .find-wrapper .find .find-locations {
-        align-items: center;
-        padding-left: 0; }
-        .find-wrapper .find .find-locations .find-current {
-          margin-bottom: 7px; }
-          .find-wrapper .find .find-locations .find-current i {
-            margin-right: 11px; }
-        .find-wrapper .find .find-locations .find-all {
-          margin-right: 19px; }
-          .find-wrapper .find .find-locations .find-all i {
-            margin-right: 15px; }
-    .find-wrapper .find-map {
-      height: 692px;
-      width: 100%; }
-      .find-wrapper .find-map .maps {
-        height: 100%;
-        width: 100%; } }
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
-@font-face {
-  font-family: "averta";
-  src: url(./fonts/averta-bold-5949306582138.otf); }
-
-@font-face {
-  font-family: "roboreg";
-  src: url(./fonts/Roboto-Slab-Regular/RobotoSlab-Regular.ttf); }
-
 .footer-bottom {
   background: #333;
   padding: 63px 18px; }
@@ -509,6 +382,7 @@
     height: 70px;
     width: 100%;
     display: flex;
+    z-index: 5;
     box-shadow: 0 10px 7px -7px #231f2b;
     -webkit-box-shadow: 0 10px 7px -7px #231f2b;
     -moz-box-shadow: 0 10px 7px -7px #231f2b; }
@@ -767,7 +641,7 @@
     background-position-x: 50%;
     height: 835px;
     opacity: 0.9;
-    position: initial; }
+    position: relative; }
     .home-main-wrapper .home-top .home-top-overlay {
       display: flex;
       flex-direction: column;
